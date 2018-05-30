@@ -1,4 +1,9 @@
 extern "C"
+#include "dianutils.h"
+#include "palservice.h"
+#include "runnable.h"
+#include "workthread.h"
+
 #include <QGuiApplication>
 #include <QDebug>
 #include <http_request.h>
@@ -6,6 +11,18 @@ extern "C"
 #include <httprequest.h>
 #include <QNetworkAccessManager>
 #include <QTextCodec>
+#include <QJsonDocument>
+#include <QJsonObject>
+#include <QThread>
+#include <QThreadPool>
+#include <QTimer>
+#include "runnable.h"
+#include <QtQml>
+
+
+void Test(){
+    qDebug() << "strHome"<<"----------";
+}
 
 int main(int argc, char *argv[])
 {
@@ -22,30 +39,61 @@ int main(int argc, char *argv[])
     QTextCodec *codec = QTextCodec::codecForName("UTF-8");//情况2
     QTextCodec::setCodecForLocale(codec);
 
-//网络请求框架
-    QNetworkAccessManager *m_manager = new QNetworkAccessManager();
-    HTTPRequest *request = new HTTPRequest(NULL,m_manager); //or null network acess manager instance, http request can create it's own access manager
-    request->setHandlerFunc([=] (QNetworkReply *reply) {
-        if (reply) {
-            QByteArray data = reply->readAll();
-            QString string_data = QString::fromUtf8(data.data());
-            qDebug() << string_data;
-        }
 
-        //delete captured request
-        request->deleteLater();
-    });
+    //开启后台线程请求网络数据
+    QThread threadWork;
+    //开启刷手后台线程
+    QThread threadPal;
 
-    QString url = "http://www.weather.com.cn/data/sk/101010100.html";
-    request->get(url);
+    WorkThread work;
+    PalService palService;
+
+    threadWork.start();
+    threadPal.start();
+
+    work.moveToThread(&threadWork);
+    palService.moveToThread(&threadPal);
 
 
+    //展示二维码图片
+//    QTimer::singleShot(0,&work,SLOT(getQRCode()));
+    //定时扫描手脉
 
+    QTimer *palTimer = new QTimer();
+    QObject::connect(palTimer,SIGNAL(timeout()), &palService, SLOT(changeValueByCode()));
+    palTimer->start(1000);
 
+    GLOBAL_USER_ID="201709999";
 
+//    QTimer::singleShot(0,&palService,SLOT(init()));
+
+//    Runnable *r = new Runnable();
+//    QThreadPool::globalInstance()->start(r);
+//    QThreadPool::globalInstance()->waitForDone();
+
+//    QThread* backgroundThread = new QThread;
+//    backgroundThread->start();
+//    task->moveToThread(backgroundThread);
+
+    //主信号
+//    QObject::connect(&work,SIGNAL(signa()),&app,SLOT(quit()));
+
+    qmlRegisterType<WorkThread>("blue.deep.work",1,0,"WorkThread");
+    qmlRegisterType<PalService>("blue.deep.palm",1,0,"PalService");
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
+
+
     if (engine.rootObjects().isEmpty())
         return -1;
 
+    //找到文档的父节点
+      QList<QObject*> rootObjects = engine.rootObjects();
+      QObject *root  = rootObjects[0];// get the first one
+      QVariant returnedValueWork;
+      QVariant message = "Hello from C++";
+      QMetaObject::invokeMethod(root, "workFunction", Q_RETURN_ARG(QVariant, returnedValueWork), Q_ARG(QVariant, message));
+
+
     return app.exec();
 }
+

@@ -2,5 +2,22 @@
     <qresource prefix="/">
         <file>main.qml</file>
         <file>qtquickcontrols2.conf</file>
+        <file>img/error_bg.png</file>
+        <file>img/index_bg.png</file>
+        <file>img/phone_bg.png</file>
+        <file>img/backmain.png</file>
+        <file>img/buttonbg.png</file>
+        <file>img/cartdone.png</file>
+        <file>img/carting.png</file>
+        <file>img/error.png</file>
+        <file>img/failed.png</file>
+        <file>img/regcapture.png</file>
+        <file>img/reg_capture.png</file>
+        <file>img/register.png</file>
+        <file>img/scanhandler.png</file>
+        <file>img/shopdone.png</file>
+        <file>img/success.png</file>
+        <file>img/systemerror.png</file>
+        <file>img/takefailed.png</file>
     </qresource>
 </RCC>

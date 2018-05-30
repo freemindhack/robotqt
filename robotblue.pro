@@ -13,7 +13,12 @@ DEFINES += QT_DEPRECATED_WARNINGS
 #DEFINES += QT_DISABLE_DEPRECATED_BEFORE=0x060000    # disables all the APIs deprecated before Qt 6.0.0
 
 SOURCES += main.cpp \
-    httprequest.cpp
+    httprequest.cpp \
+    runnable.cpp \
+    workthread.cpp \
+    palservice.cpp \
+    dianutils.cpp \
+    tinyxml2.cpp \
 
 RESOURCES += qml.qrc
 
@@ -31,7 +36,55 @@ else: unix:!android: target.path = /opt/$${TARGET}/bin
 HEADERS += \
     http_request.h \
     httprequest.h \
-    httprequest_global.h
+    httprequest_global.h \
+    runnable.h \
+    workthread.h \
+    palservice.h \
+    pvs_hal.h \
+    pvsapiif.h \
+    pvsapiifcommon.h \
+    pvsapiiftypes.h \
+    dianutils.h \
+    tinyxml2.h \
+    commoncontants.h
 
 
 
+
+unix:!macx: LIBS += -L$$PWD/../sensord/pvs/ -lpvs_hal
+
+INCLUDEPATH += $$PWD/../sensord/pvs
+DEPENDPATH += $$PWD/../sensord/pvs
+
+unix:!macx: LIBS += -L$$PWD/../sensord/pvs/pvslib/ -lf3bc4bio
+
+INCLUDEPATH += $$PWD/../sensord/pvs/pvslib
+DEPENDPATH += $$PWD/../sensord/pvs/pvslib
+
+unix:!macx: LIBS += -L$$PWD/../sensord/pvs/pvslib/ -lf3bc4bsp
+
+INCLUDEPATH += $$PWD/../sensord/pvs/pvslib
+DEPENDPATH += $$PWD/../sensord/pvs/pvslib
+
+unix:!macx: LIBS += -L$$PWD/../sensord/pvs/pvslib/ -lf3bc4cap
+
+INCLUDEPATH += $$PWD/../sensord/pvs/pvslib
+DEPENDPATH += $$PWD/../sensord/pvs/pvslib
+
+unix:!macx: LIBS += -L$$PWD/../sensord/pvs/pvslib/ -lf3bc4com
+
+INCLUDEPATH += $$PWD/../sensord/pvs/pvslib
+DEPENDPATH += $$PWD/../sensord/pvs/pvslib
+
+unix:!macx: LIBS += -L$$PWD/../sensord/pvs/pvslib/ -lf3bc4mat
+
+INCLUDEPATH += $$PWD/../sensord/pvs/pvslib
+DEPENDPATH += $$PWD/../sensord/pvs/pvslib
+
+unix:!macx: LIBS += -L$$PWD/../sensord/pvs/pvslib/ -lpvsapiif
+
+INCLUDEPATH += $$PWD/../sensord/pvs/pvslib
+DEPENDPATH += $$PWD/../sensord/pvs/pvslib
+
+DISTFILES += \
+    dataloader.js
