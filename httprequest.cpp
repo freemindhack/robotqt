@@ -50,6 +50,22 @@ void HTTPRequest::post(const QString &url, QMap<QString, QString> &postData)
     return post(url,multiPart);
 }
 
+
+void HTTPRequest::post(const QString &url, QString postDataXml)
+{
+    postDataXml=postDataXml.replace("\n","");
+    QNetworkRequest request;
+    request.setRawHeader("Content-Type","text/xml;charset=UTF-8");
+    request.setUrl(QUrl(url));
+    QNetworkReply *reply = m_manager->post(request, QByteArray::fromStdString( postDataXml.toStdString()));
+//    multipart->setParent(reply);
+    qDebug()<<postDataXml;
+    connect(reply, SIGNAL(finished()), this, SLOT(onRequestCompleted()));
+    connect(reply, SIGNAL(error(QNetworkReply::NetworkError)), this, SLOT(onRequestFailed(QNetworkReply::NetworkError)));
+}
+
+
+
 void HTTPRequest::get(const QString &url)
 {
     QNetworkRequest request;
@@ -70,8 +86,10 @@ void HTTPRequest::onRequestCompleted() {
 }
 
 void HTTPRequest::onRequestFailed(QNetworkReply::NetworkError error) {
+    qDebug()<<error<<"-----------*********";
     if (_handler_func)
     {
+
         _handler_func(NULL);
     }
 }

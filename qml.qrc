@@ -11,7 +11,6 @@
         <file>img/carting.png</file>
         <file>img/error.png</file>
         <file>img/failed.png</file>
-        <file>img/regcapture.png</file>
         <file>img/reg_capture.png</file>
         <file>img/register.png</file>
         <file>img/scanhandler.png</file>
@@ -19,5 +18,7 @@
         <file>img/success.png</file>
         <file>img/systemerror.png</file>
         <file>img/takefailed.png</file>
+        <file>img/regcapturebtn.png</file>
+        <file>img/shoplist.png</file>
     </qresource>
 </RCC>

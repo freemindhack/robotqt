@@ -9,6 +9,8 @@
 #include <pvs_hal.h>
 #include <palservice.h>
 #include <qcoreapplication.h>
+#include <qscriptjson.h>
+#include <QUdpSocket>
 
 WorkThread::WorkThread(QObject *parent) : QObject(parent)
 {
@@ -29,6 +31,10 @@ void WorkThread::getData(){
                 Dianutils dianUtils;
                 QString string_data = QString::fromUtf8(data.data());
                 QJsonObject datajson= dianUtils.getJsonObjectFromString(string_data);
+
+//                QScriptJson qsj("/home/robot/Desktop/workplan/data.xml");
+//                qsj.write2File();
+
                 if(datajson.contains("weatherinfo")){
                     QJsonValue jsvalue=datajson.value("weatherinfo");
                     if(jsvalue.isObject()){
@@ -73,17 +79,33 @@ void WorkThread::getData(){
         qDebug()<<"get data";
 }
 
+void WorkThread::receiveDataFromCsharp()
+{
 
+}
+
+void getRabbitMq(){
+
+
+}
 
 
 int WorkThread::sendWorkSignal()
 {
+    getRabbitMq();
     if(timeRequest<=5){
       timeRequest++;
     }else{
         timeRequest=0;
-        getData();
+        //getData();
     }
     return WorkThread::isByScan;
 }
+
+
+
+//----------------------------------
+
+
+
 

@@ -18,11 +18,11 @@ extern "C"
 #include <QTimer>
 #include "runnable.h"
 #include <QtQml>
+#include <iostream>
+#include <c_udp.h>
 
-
-void Test(){
-    qDebug() << "strHome"<<"----------";
-}
+#include <inc/tts.h>
+extern int start_tts(tts_session_params *param, char *text, char *filename);
 
 int main(int argc, char *argv[])
 {
@@ -55,12 +55,18 @@ int main(int argc, char *argv[])
     palService.moveToThread(&threadPal);
 
 
+
+    C_UDP udpthread;
+    udpthread.start();
+
+
+
     //展示二维码图片
 //    QTimer::singleShot(0,&work,SLOT(getQRCode()));
     //定时扫描手脉
 
     QTimer *palTimer = new QTimer();
-    QObject::connect(palTimer,SIGNAL(timeout()), &palService, SLOT(changeValueByCode()));
+    QObject::connect(palTimer,SIGNAL(timeout()), &palService, SLOT(changeValueByCode()),Qt::QueuedConnection);
     palTimer->start(1000);
 
     GLOBAL_USER_ID="201709999";
@@ -80,6 +86,8 @@ int main(int argc, char *argv[])
 
     qmlRegisterType<WorkThread>("blue.deep.work",1,0,"WorkThread");
     qmlRegisterType<PalService>("blue.deep.palm",1,0,"PalService");
+
+    qmlRegisterType<C_UDP>("blue.deep.cudp",1,0,"C_UDP");
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
 
@@ -92,6 +100,7 @@ int main(int argc, char *argv[])
       QVariant returnedValueWork;
       QVariant message = "Hello from C++";
       QMetaObject::invokeMethod(root, "workFunction", Q_RETURN_ARG(QVariant, returnedValueWork), Q_ARG(QVariant, message));
+
 
 
     return app.exec();

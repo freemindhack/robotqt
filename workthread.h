@@ -15,6 +15,7 @@ signals:
 
 public slots:
     void getData();
+    void receiveDataFromCsharp();
     int sendWorkSignal();
 private:
     int isByScan;

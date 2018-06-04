@@ -19,6 +19,7 @@ public:
 
     void post(const QString &url, QHttpMultiPart *multipart);
     void post(const QString &url, QMap<QString, QString> &postData);
+    void post(const QString &url, QString postData);
     void get(const QString &url);
 
     void setHandlerFunc (std::function<void (QNetworkReply *reply)> handler_func)
