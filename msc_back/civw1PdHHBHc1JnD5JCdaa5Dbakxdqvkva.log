@@ -1,0 +1,27 @@
+============================================================
+Time  2018/06/05 12:42:22 601 
+============================================================
+[2018/06/05 12:42:22 601] ivw_local  1287 os_type is:  Linux  
+[2018/06/05 12:42:22 602] ivw_local  1296 ivw loaded!  
+[2018/06/05 12:42:22 602] ivw_local  1298 1001.60.1421  
+[2018/06/05 12:42:22 602] ivw_local  1321 last gc at  1528173692  
+[2018/06/05 12:42:22 602] ivw_local  1231 SYS_MSG_REGCB  msp_status_cb  func(5403d420) 
+[2018/06/05 12:42:22 602] ivw_local  1321 last gc at  1528173692  
+[2018/06/05 12:42:22 602] ivw_local  1046 IVW_LOCAL_INIT_CHECK  
+[2018/06/05 12:42:22 602] ivw_local  1052 ivw_res_path:  fo|res/ivw/wakeupresource.jet  
+[2018/06/05 12:42:22 602] ivw_local  681  lgi:  nil  nil  
+[2018/06/05 12:42:22 602] ivw_local  685  fo|res/ivw/wakeupresource.jet  1  
+[2018/06/05 12:42:22 602] ivw_local  476  err  0  
+[2018/06/05 12:42:22 602] ivw_local  477  res_ver  3  
+[2018/06/05 12:42:22 602] ivw_local  478  res_appid_md5    
+[2018/06/05 12:42:22 602] ivw_local  479  res_id    
+[2018/06/05 12:42:22 602] ivw_local  480  |%fsoniah%=|%fwwnc%=%2e73dbdd%+%ubtnc%=%d3ce733?e0ec5e34dea46a15be5f>33b%+%ubts~wb%=%c%z+%nqpphuc%=|%irj%=5+%phuct%=\|%nc%=7+%sbs%=%nfh4kfi5in5ofh4%+%soubtohkc%=6327z+|%nc%=6+%sbs%=%nfh4kfi5mn6vn3ubi5%+%soubtohkc%=6327zZz+%ubttn}b%=>>7737+%ubtsnjb%=6250?222>>+%ubtqbu%=%q1777%z  
+[2018/06/05 12:42:22 602] ivw_local  488  speech_plus_setting  0  
+[2018/06/05 12:42:22 602] ivw_local  540  xiao3lan2ni2hao3  0  1450  
+[2018/06/05 12:42:22 603] ivw_local  540  xiao3lan2ji1qi4ren2  1  1450  
+[2018/06/05 12:42:22 603] ivw_local  572  d  
+[2018/06/05 12:42:22 603] ivw_local  578  appid not match  5b10f68a  5b04cecc  
+[2018/06/05 12:42:22 603] ivw_local  701  res check failed! ret=  11210  
+[2018/06/05 12:42:22 603] ivw_local  1062 init_check err:  11210  
+[2018/06/05 12:42:22 603] ivw_local  1208 SYS_MSG_UNLOAD  
+[2018/06/05 12:42:22 603] ivw_local  1321 last gc at  1528173692  

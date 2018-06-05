@@ -5,7 +5,7 @@ import blue.deep.work 1.0
 import blue.deep.palm 1.0
 import "ajax.js" as AjaxScript
 import blue.deep.cudp 1.0;
-
+import blue.deep.voice 1.0;
 
 ApplicationWindow {
     visible: true
@@ -30,9 +30,10 @@ ApplicationWindow {
 //                     swipeView.currentIndex=2;
 //                  console.log("please keep hold")
                   break;
-              case 9:
+              case 9:                  
                   console.log("扫手注册成功"+parameter)
                   timerpalmService.stop();
+                  timerGetRegister.stop();
                   doPostPlam("17317396108","Glo",1);//调用
                   palservice.setChangeValue(5);
                   palservice.setChangeValue(4);
@@ -45,6 +46,9 @@ ApplicationWindow {
                   break;
               case 999:
                   console.log("处理UDP"+parameter)
+                  break;
+              case 1001:
+                  console.log("处理voice"+parameter)
                   break;
             }
 
@@ -71,11 +75,28 @@ ApplicationWindow {
             id: timerGetUserId
             interval: 2000;//如果没有成功就再次开启
             repeat: true
-            running: true
+            running: false
             triggeredOnStart: true
             onTriggered: {
                 // cudp.onUdp()
-                 getCurrentUserFunc()
+                 getCurrentUserFunc(1)
+            }
+        }
+        Timer {
+            id: timerGetRegister
+            interval: 2000;//如果没有成功就再次开启
+            repeat: true
+            running: false
+            triggeredOnStart: true
+            onTriggered: {
+                // cudp.onUdp()
+                if(palservice.getPalmCount()==="0"){
+                    getCurrentUserFunc(2)
+                }else if(palservice.getPalmCount()==="1"){
+                    regCaptureImg.source="img/scan2.png"
+                }else if(palservice.getPalmCount()==="2"){
+                    regCaptureImg.source="img/scan3.png"
+                }
             }
         }
         //获取开启掌脉
@@ -90,7 +111,7 @@ ApplicationWindow {
             }
         }
 
-       //------------------------------------------------first page-----------------------------------------------------
+       //------------------------------------------------1 page-----------------------------------------------------
   Rectangle{
             id:page1
                width: 800
@@ -127,23 +148,16 @@ ApplicationWindow {
                  onTriggered: indicator.running=false
              }
              ListModel{
-                 id:lm
-                 ListElement{name:"xx";age:"12"}
-                 ListElement{name:"xx";age:"12"}
-                 ListElement{name:"xx";age:"12"}
-                 ListElement{name:"xx";age:"12"}
-                 ListElement{name:"xx";age:"12"}
-                 ListElement{name:"xx";age:"12"}
-                 ListElement{name:"xx";age:"12"}
-                 ListElement{name:"xx";age:"12"}
-                 ListElement{name:"xx";age:"12"}
-                 ListElement{name:"xx";age:"12"}
-                 ListElement{name:"xx";age:"12"}
-                 ListElement{name:"xx";age:"12"}
-                 ListElement{name:"xx";age:"12"}
-                 ListElement{name:"xx";age:"12"}
-                 ListElement{name:"xx";age:"12"}
-                 ListElement{name:"xx";age:"12"}
+                 id:lm               
+                  ListElement{name:"the flavor of the flower";price:"12";weight:"2.0"}
+                  ListElement{name:"the flavor of the flower";price:"12";weight:"2.0"}
+                  ListElement{name:"the flavor of the flower";price:"12";weight:"2.0"}
+                  ListElement{name:"the flavor of the flower";price:"12";weight:"2.0"}
+                  ListElement{name:"the flavor of the flower";price:"12";weight:"2.0"}
+                  ListElement{name:"the flavor of the flower";price:"12";weight:"2.0"}
+                  ListElement{name:"the flavor of the flower";price:"12";weight:"2.0"}
+                  ListElement{name:"the flavor of the flower";price:"12";weight:"2.0"}
+
              }
 
              ListView{
@@ -171,16 +185,48 @@ ApplicationWindow {
                       //contentHeight内容高度-内容右上角Y=屏幕+剩下内容宽度
                       //如果剩下内容宽度 不足listview 高度的9/10 就是下拉刷新了
                       if(1){
-                         getShopCart();
+                         getShopCart(1);
                       }
                  }
 
                  delegate:Rectangle {
                      width:parent.width
                      height:50
-                     color:ListView.isCurrentItem?"red":"white"
+                     color:ListView.isCurrentItem?"#a8e6ff":"white"
                      Label{
-                         text:"姓名:"+name+"      年纪:"+age
+                         x:30
+                         y:5
+                         width:700
+                         height: 50
+                         font.pixelSize: 18
+                         font.bold: false
+                         color: "#333333"
+                         verticalAlignment: Text.AlignTop
+                         horizontalAlignment: Text.AlignLeft
+                         text: name
+                     }
+                     Label{
+                         x:30
+                         y:10
+                         width:700
+                         height: 50
+                         font.pixelSize: 15
+                         color: "#999999"
+                         verticalAlignment: Text.AlignVCenter
+                         horizontalAlignment: Text.AlignLeft
+                         text: weight
+                     }
+                     Label{
+                         x:700
+                         y:0
+                         width:100
+                         height: 50
+                         text: "¥ "+price
+                         font.pixelSize: 25
+                         font.bold: true
+                         color: "#ff722b"
+                         verticalAlignment: Text.AlignVCenter
+                         horizontalAlignment: Text.AlignHCenter
                      }
                      MouseArea{
                          anchors.fill: parent
@@ -199,8 +245,12 @@ ApplicationWindow {
              width: 58
              height: 15
              fillMode: Image.Tile
-             source: "img/backmain.png"
+             source: "img/back_grey.png"
              MouseArea{
+                 anchors.rightMargin: 0
+                 anchors.bottomMargin: 0
+                 anchors.leftMargin: 0
+                 anchors.topMargin: 0
                  anchors.fill: parent
                  onClicked: swipeView.currentIndex=1
              }
@@ -320,7 +370,9 @@ ApplicationWindow {
                         anchors.fill : parent
                         onClicked: {
                             console.log("11111");
-                            swipeView.currentIndex=2;
+                            speaker.receiveDataFromUI("你好你好好好好好")
+//                            startInventory()
+//                            swipeView.currentIndex=2;
 //                            palservice.playerTTS("1111111111111111111111111111111111111111")
 
                         }
@@ -1153,9 +1205,8 @@ ApplicationWindow {
                    MouseArea{
                      anchors.fill: parent
                      onClicked: {
-                         palservice.setChangeValue(1)
-                         timerpalmService.start()
-                         swipeView.currentIndex=4
+                         removePalmVienPageShow();
+//                         swipeView.currentIndex=8
                      }
                    }
                 }
@@ -1239,6 +1290,8 @@ ApplicationWindow {
                    MouseArea{
                      anchors.fill: parent
                      onClicked: {
+                         timerGetRegister.start()
+                         regCaptureImg.source="img/scan1.png"
                          palservice.setChangeValue(1)
                          timerpalmService.start()
                          console.log("重新采集")
@@ -1267,12 +1320,12 @@ ApplicationWindow {
                 y: 139
                 width: 364
                 height: 248
-                source: "img/reg_capture.png"
+                source: "img/scan1.png"
             }
       }
 
 }
-
+  //------------------------------------------------6 page-----------------------------------------------------
   Rectangle{
       id:page6
          width: 800
@@ -1369,8 +1422,7 @@ ApplicationWindow {
       }
 
   }
-
-
+ //------------------------------------------------7------------------------------------------------
   Rectangle{
       id:page7
          width: 800
@@ -1444,7 +1496,7 @@ ApplicationWindow {
       }
 
   }
-  //------------------------------------------------5------------------------------------------------
+  //------------------------------------------------8------------------------------------------------
   Rectangle{
       id:page8
          width: 800
@@ -1518,9 +1570,119 @@ ApplicationWindow {
       }
 
   }
-  //------------------------------------------------5------------------------------------------------
+  //------------------------------------------------9------------------------------------------------
+
+Rectangle{
+    id:page9
+       width: 800
+       height: 480
+
+       MouseArea{
+           anchors.fill : parent
+           onClicked: stopRobotFunc()
+       }
+
+   Image {
+       id: image15
+       width: 800
+       height: 480
+       source: "img/index_bg.png"
+       Rectangle{
+           x: 315
+           y: 215
+           width: 160
+           height: 160
+           color: "#121212";
+           //图片资源，image的status改变的时候，会发出一个StatusChange信号，对应信号处理是On<property>Changed;
+           Image{
+               id:imageViewer2;
+               x: 0
+               y: 0
+               asynchronous: true;
+               cache: false;
+               width: 160
+               height: 160
+               opacity: 1
+
+               fillMode: Image.PreserveAspectFit;
+
+               onStatusChanged: {
+                   if(imageViewer2.status == Image.Loading){
+                       busy.running = true;
+                       stateLabel.visible = false;
+                   }
+                   else if(imageViewer2.status == Image.Ready){
+                       busy.running = false;
+                   }
+                   else if(imageViewer2.status == Image.Error){
+                       busy.running = false;
+                       stateLabel.visible = true;
+                       stateLabel.text = "ERROR";
+                   }
+               }
+
+           }
+           Component.onCompleted: {
+               imageViewer2.source = "https://api.quixmart.com/quixmart-api/alipayXServer/getQRCode?intoMethod=1&initDeviceNo=Robot20170923";
+           }
+       }
+
+
+
+
+       Text {
+           id: text21
+           x: 257
+           y: 65
+           width: 287
+           height: 70
+           color: "#f7f6f6"
+           text: qsTr("请先用支付宝扫码")
+           verticalAlignment: Text.AlignVCenter
+           horizontalAlignment: Text.AlignHCenter
+           font.pixelSize: 32
+       }
+
+       Text {
+           id: text41
+           x: 190
+           y: 141
+           width: 421
+           height: 56
+           color: "#ffeded"
+           text: qsTr("Please scan the QRcode")
+           verticalAlignment: Text.AlignVCenter
+           horizontalAlignment: Text.AlignHCenter
+           font.pixelSize: 23
+       }
+   }
+}
+
 
 }
+
+    Text {
+        id: clock
+        x:650
+        y:10
+        width: 150
+        height: 30
+        color: "white"
+        text: qsTr("2018.09.25  14:32")
+        Timer{
+            interval: 30000;//如果没有成功就再次开启
+            repeat: true
+            running: true
+            triggeredOnStart: true
+            onTriggered: {
+                if(swipeView.currentIndex===0)
+                     clock.color="#666666";
+                else
+                     clock.color="white";
+                clock.text=speaker.getCurrentTime()
+            }
+        }
+    }
 
 //------------------------------------------------qml------------------------------------------------
 
@@ -1547,7 +1709,12 @@ ApplicationWindow {
           workThreadSignal(999)
       }
     }
-
+    VoiceThread{
+      id:speaker
+      onSpeak:{
+          workThreadSignal(1001)
+      }
+    }
 
 
  //------------------------------------------------Connections------------------------------------------------
@@ -1622,13 +1789,14 @@ ApplicationWindow {
                               if(msg==="PALMYUN2001"){
                                   console.log(msg+"该会员已经注册")
                                   palservice.setChangeValue(4)
-                                  swipeView.currentIndex=2
+                                  swipeView.currentIndex=1
                               }
                               if(msg.indexOf("transCode")!==-1){
                                    var transcode=palservice.getXMLByNodeName(msg,"transCode","PalmRes");
                                    if(transcode==="C1001"){
-                                      console.log("扫手注册成功")
+                                       console.log("扫手注册成功")
                                        palservice.setChangeValue(4)
+                                       swipeView.currentIndex=5
                                     }else{
                                        console.log("扫手注册失败")
                                        palservice.setChangeValue(4)
@@ -1666,7 +1834,7 @@ ApplicationWindow {
                               palservice.clearPalmData();
                               console.log(msg+"1211-**********")
                               palservice.setCurrentUserID(palservice.getXMLByNodeName(msg,"userId","PalmRes"))
-                              if(palservice.getCurrentUserID()==="0"){
+                              if(palservice.getCurrentUserID()!=="0"){
                                   openDoorFunc()
                                   console.log("开始-**********")
                               }
@@ -1688,6 +1856,7 @@ ApplicationWindow {
                             //some js code
                           },
                           success:function(msg){
+                              swipeView.currentIndex=5
                               console.log((msg).toString()+"OpenDoor success-**********")
                           },
                           error:function(){
@@ -1729,6 +1898,7 @@ ApplicationWindow {
                             //some js code
                           },
                           success:function(msg){
+                              console.log(JSON.stringify(msg)+"   start success")
                                if(msg.code==="10000"){
                                    getShopCart(msg);//处理盘点数据
 
@@ -1806,22 +1976,33 @@ ApplicationWindow {
 
   }
 
-  function getCurrentUserFunc(){
+  function getCurrentUserFunc(status){
+      console.log(palservice.getPalmCount()+"--------------");
       AjaxScript.ajax({   type:"POST",
                           url:palservice.getComponyUrl()+"posXServer/getPalmVienPageShow",
                           dataType:"json",
                           contentType: "application/json",
                           data:JSON.stringify({
                               initDeviceNo:"Robot20170923",
-                              status:1
+                              status:status
                           }),
                           beforeSend:function(){
                             //some js code
                           },
                           success:function(msg){
-                              if(msg.resultCode==="1"){
-                                  palservice.setCurrentUserID(msg.data.alipayUserID);
-                                  openDoorFunc();
+                              if(msg.resultCode==="1"){                                  
+                                  //扫手注册掌页面
+                                  if(status===1){
+                                      timerGetUserId.stop();
+                                      palservice.setCurrentUserID(msg.data.alipayUserID);
+                                      openDoorFunc();
+                                  }else{
+                                     //进入注册页面
+                                      palservice.setChangeValue(1)
+                                      timerpalmService.start()
+                                      swipeView.currentIndex=4
+                                      console.log(msg.data.alipayUserID+" success-**********"+status)
+                                  }
                                   console.log(msg.data.alipayUserID+"getCurrentUserFunc success-**********")
                               }
                               console.log(JSON.stringify(msg)+"getCurrentUserFunc success-**********")
@@ -1834,10 +2015,39 @@ ApplicationWindow {
   }
 
 
+  function removePalmVienPageShow(){
+      AjaxScript.ajax({   type:"POST",
+                          url:palservice.getComponyUrl()+"posXServer/removePalmVienPageShow",
+                          dataType:"json",
+                          contentType: "application/json",
+                          data:JSON.stringify({
+                              initDeviceNo:"Robot20170923",
+                          }),
+                          beforeSend:function(){
+                            //some js code
+                          },
+                          success:function(msg){
+                              if(msg.resultCode==="1"){
+                                  timerGetRegister.start()                                  
+                                  swipeView.currentIndex=8
+//                                    setPalmVienPageShow();
+                              }
+                              console.log(JSON.stringify(msg)+"removePalmVienPageShow success-**********")
+                          },
+                          error:function(){
+                            console.log(palservice.getComponyUrl()+"setPalmVienPageShow failed-**********")
+                          }
+         });
+
+  }
+
   //获取customer shopping 物品
-  function getShopCart(){
+  function getShopCart( msg){
 
       swipeView.currentIndex=0;//处理成功展示
+//      if(msg.code==="10000"){
+//          console.log("10000")
+//      }
 
       if(lv.contentY>0&&lv.contentHeight-lv.contentY<lv.contentHeight*(9/10))
        {
@@ -1845,11 +2055,12 @@ ApplicationWindow {
           timer.start()
           console.log("上拉加载")
            var rd=Math.random()
-           lm.append({name:"hanhan"+rd,age:"20"});
-           lm.append({name:"hanhan"+rd,age:"20"});
-           lm.append({name:"hanhan"+rd,age:"20"});
-           lm.append({name:"hanhan"+rd,age:"20"});
-           lm.append({name:"hanhan"+rd,age:"20"});
+          lm.clear();
+          lm.append({name:"the flavor of the flower",price:"12",weight:"2.0"});
+          lm.append({name:"the flavor of the flower",price:"12",weight:"2.0"});
+          lm.append({name:"the flavor of the flower",price:"12",weight:"2.0"});
+          lm.append({name:"the flavor of the flower",price:"12",weight:"2.0"});
+          lm.append({name:"the flavor of the flower",price:"12",weight:"2.0"});
       }
       //如果 contentY<0表示 下拉
       if(lv.contentY<0)

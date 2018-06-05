@@ -20,9 +20,14 @@ extern "C"
 #include <QtQml>
 #include <iostream>
 #include <c_udp.h>
-
+#include <voicethread.h>
 #include <inc/tts.h>
+#include <QDateTime>
+#include <inc/awaken.h>
+
 extern int start_tts(tts_session_params *param, char *text, char *filename);
+
+
 
 int main(int argc, char *argv[])
 {
@@ -44,22 +49,29 @@ int main(int argc, char *argv[])
     QThread threadWork;
     //开启刷手后台线程
     QThread threadPal;
+    QThread threadVoice;
+    QThread threadVoiceAsr;
 
     WorkThread work;
+    VoiceThread voice;
+    VoiceThread voiceAsr;
     PalService palService;
 
     threadWork.start();
     threadPal.start();
+    threadVoiceAsr.start();
+    threadVoice.start();
 
     work.moveToThread(&threadWork);
     palService.moveToThread(&threadPal);
-
+    voice.moveToThread(&threadVoice);
+    voiceAsr.moveToThread(&threadVoiceAsr);
 
 
     C_UDP udpthread;
     udpthread.start();
 
-
+    QTimer::singleShot(0,&voiceAsr,SLOT(initASR()));
 
     //展示二维码图片
 //    QTimer::singleShot(0,&work,SLOT(getQRCode()));
@@ -70,6 +82,11 @@ int main(int argc, char *argv[])
     palTimer->start(1000);
 
     GLOBAL_USER_ID="201709999";
+
+
+    QTimer *voiceTimer = new QTimer();
+    QObject::connect(voiceTimer,SIGNAL(timeout()), &voice, SLOT(initScan()),Qt::QueuedConnection);
+    voiceTimer->start(2000);
 
 //    QTimer::singleShot(0,&palService,SLOT(init()));
 
@@ -86,7 +103,7 @@ int main(int argc, char *argv[])
 
     qmlRegisterType<WorkThread>("blue.deep.work",1,0,"WorkThread");
     qmlRegisterType<PalService>("blue.deep.palm",1,0,"PalService");
-
+    qmlRegisterType<VoiceThread>("blue.deep.voice",1,0,"VoiceThread");
     qmlRegisterType<C_UDP>("blue.deep.cudp",1,0,"C_UDP");
     engine.load(QUrl(QStringLiteral("qrc:/main.qml")));
 
@@ -105,4 +122,5 @@ int main(int argc, char *argv[])
 
     return app.exec();
 }
+
 

@@ -24,10 +24,19 @@ SOURCES += main.cpp \
     tinyxml2.cpp \
     qscriptjson.cpp \
     c_udp.cpp \
-    Xml.cpp
+    Xml.cpp \
+    voicethread.cpp
 
 RESOURCES += qml.qrc \
-ajax.js
+    ajax.js\
+    msc/msc.cfg \
+    msc/res/asr/common.jet \
+    msc/res/ivw/wakeupresource.jet \
+    msc/res/tts/common.jet \
+    msc/res/tts/xiaofeng.jet \
+    msc/res/tts/xiaoyan.jet
+
+
 
 # Additional import path used to resolve QML modules in Qt Creator's code model
 QML_IMPORT_PATH =
@@ -86,7 +95,9 @@ HEADERS += \
     inc/qivw.h \
     inc/qtts.h \
     inc/speech_recognizer.h \
-    inc/tts.h
+    inc/tts.h \
+    voicethread.h \
+    inc/awaken.h
 
 
 
@@ -128,21 +139,8 @@ DEPENDPATH += $$PWD/../sensord/pvs/pvslib
 
 DISTFILES += \
     dataloader.js \
-    test.wav \
-    msc/msc_back/res/ivw/wakeupresource.jet \
-    msc/msc_back/res/tts/common.jet \
-    msc/msc_back/res/tts/xiaofeng.jet \
-    msc/msc_back/res/tts/xiaoyan.jet \
-    msc/res/ivw/wakeupresource.jet \
-    msc/res/tts/common.jet \
-    msc/res/tts/xiaofeng.jet \
-    msc/res/tts/xiaoyan.jet \
-    msc/ca5a81647a6d5f14f1e91be345abf427/cfg.ldata \
-    msc/ca5a81647a6d5f14f1e91be345abf427/kaisound.dat \
-    msc/msc_back/ca5a81647a6d5f14f1e91be345abf427/cfg.ldata \
-    msc/msc_back/ca5a81647a6d5f14f1e91be345abf427/kaisound.dat \
-    msc/msc_back/msc.cfg \
-    msc/msc.cfg \
+    test.wav
+
 
 
 
@@ -166,6 +164,11 @@ INCLUDEPATH += $$PWD/.
 DEPENDPATH += $$PWD/.
 
 unix:!macx: LIBS += -L$$PWD/lib/ -laisound
+
+INCLUDEPATH += $$PWD/.
+DEPENDPATH += $$PWD/.
+
+unix:!macx: LIBS += -L$$PWD/lib/ -lawaken
 
 INCLUDEPATH += $$PWD/.
 DEPENDPATH += $$PWD/.

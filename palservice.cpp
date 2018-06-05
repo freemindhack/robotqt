@@ -15,8 +15,8 @@ std::int8_t GLOBAL_CURRENT_STATUS;//全局掌脉状态
 std::int8_t GLOBAL_CONTROL_CODE;//全局指令
 std::string GLOBAL_CONTROL_PALM_RESULT;//全局指令
 std::int8_t GLOBAL_CONTROL_PALM_OPTYPE;//全局指令
-std::string GLOBAL_PHONE_FOUR;
-
+std::string GLOBAL_PHONE_FOUR;    //手机后四位
+std::string GLOBAL_PALM_COUNT="0";   //当前次数
 
 const QString AddNewUser="1";
 const QString UpdateUser="2";
@@ -64,6 +64,12 @@ QString PalService::subPhoneFour()
     }
     GLOBAL_PHONE_FOUR=str.toStdString();
     return str;
+
+}
+
+QString PalService::getPalmCount()
+{
+    return QString::fromStdString(GLOBAL_PALM_COUNT);
 
 }
 
@@ -153,6 +159,13 @@ int handleInit(PVS_APIIF_GUI_STATE GuiState,PVS_APIIF_GUI_MESSAGE Message,PVS_AP
                 }
             case PVS_APIIF_MESSAGE_MOVE_AWAY:
                 {
+                if(GLOBAL_PALM_COUNT=="0"){
+                    GLOBAL_PALM_COUNT="1";
+                }else if(GLOBAL_PALM_COUNT=="1"){
+                    GLOBAL_PALM_COUNT="2";
+                }else if(GLOBAL_PALM_COUNT=="2"){
+                    GLOBAL_PALM_COUNT="3";
+                }
                     qDebug()<<("请移开手,稍后再放回\n");
                     break;
                 }

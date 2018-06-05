@@ -1,0 +1,11 @@
+<!DOCTYPE RCC><RCC version="1.0">
+<qresource prefix="/">
+<file alias="ajax.js">/home/robot/robotblue/ajax.js</file>
+<file alias="msc/msc.cfg">/home/robot/robotblue/msc/msc.cfg</file>
+<file alias="msc/res/asr/common.jet">/home/robot/robotblue/msc/res/asr/common.jet</file>
+<file alias="msc/res/ivw/wakeupresource.jet">/home/robot/robotblue/msc/res/ivw/wakeupresource.jet</file>
+<file alias="msc/res/tts/common.jet">/home/robot/robotblue/msc/res/tts/common.jet</file>
+<file alias="msc/res/tts/xiaofeng.jet">/home/robot/robotblue/msc/res/tts/xiaofeng.jet</file>
+<file alias="msc/res/tts/xiaoyan.jet">/home/robot/robotblue/msc/res/tts/xiaoyan.jet</file>
+</qresource>
+</RCC>

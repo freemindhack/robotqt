@@ -12,7 +12,7 @@ extern std::int8_t GLOBAL_CONTROL_CODE;//全局指令
 extern std::string GLOBAL_CONTROL_PALM_RESULT;//全局结果
 extern std::int8_t GLOBAL_CONTROL_PALM_OPTYPE;//全局类型
 extern std::string GLOBAL_PHONE_FOUR;
-
+extern std::string GLOBAL_PALM_COUNT;   //当前次数
 class PalService : public QObject
 {
     Q_OBJECT
@@ -42,6 +42,7 @@ public slots:
     QString getCurrentUserID();
     QString getPhoneFour();
     QString subPhoneFour();
+    QString getPalmCount();
     void setPhoneFour(QString s);
     void setCurrentUserID(QString userID);
 private:

@@ -1,0 +1,1359 @@
+============================================================
+Time  2018/06/05 12:41:27 092 
+============================================================
+[2018/06/05 12:41:27 117][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST socket_main_0:1:1:0
+[2018/06/05 12:41:27 118][Pxe48][Tx915a4700][DBG] MSPTHREAD  MSPThreadP 825  socket_main_0 IDLE
+[2018/06/05 12:41:27 118][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_1:1:1:0
+[2018/06/05 12:41:27 118][Pxe48][Tx915a4700][DBG] MSPTHREAD  MSPThreadP 867  socket_main_0 RUN <socket_main_0>
+[2018/06/05 12:41:27 118][Pxe48][Tx8b7fe700][DBG] MSPTHREAD  MSPThreadP 825  l_engine_1 IDLE
+[2018/06/05 12:41:27 118][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_2:1:1:0
+[2018/06/05 12:41:27 118][Pxe48][Tx8b7fe700][DBG] MSPTHREAD  MSPThreadP 867  l_engine_1 RUN <l_engine_1>
+[2018/06/05 12:41:27 118][Pxe48][Tx8affd700][DBG] MSPTHREAD  MSPThreadP 825  l_engine_2 IDLE
+[2018/06/05 12:41:27 118][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_3:1:1:0
+[2018/06/05 12:41:27 118][Pxe48][Tx8affd700][DBG] MSPTHREAD  MSPThreadP 867  l_engine_2 RUN <l_engine_2>
+[2018/06/05 12:41:27 118][Pxe48][Tx8a7fc700][DBG] MSPTHREAD  MSPThreadP 825  l_engine_3 IDLE
+[2018/06/05 12:41:27 118][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_4:1:1:0
+[2018/06/05 12:41:27 118][Pxe48][Tx8a7fc700][DBG] MSPTHREAD  MSPThreadP 867  l_engine_3 RUN <l_engine_3>
+[2018/06/05 12:41:27 118][Pxe48][Tx89ffb700][DBG] MSPTHREAD  MSPThreadP 825  l_engine_4 IDLE
+[2018/06/05 12:41:27 118][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:1:1:0
+[2018/06/05 12:41:27 118][Pxe48][Tx89ffb700][DBG] MSPTHREAD  MSPThreadP 867  l_engine_4 RUN <l_engine_4>
+[2018/06/05 12:41:27 118][Pxe48][Tx897fa700][DBG] MSPTHREAD  MSPThreadP 825  l_engine_5 IDLE
+[2018/06/05 12:41:27 118][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_6:1:1:0
+[2018/06/05 12:41:27 118][Pxe48][Tx897fa700][DBG] MSPTHREAD  MSPThreadP 867  l_engine_5 RUN <l_engine_5>
+[2018/06/05 12:41:27 118][Pxe48][Tx88ff9700][DBG] MSPTHREAD  MSPThreadP 825  l_engine_6 IDLE
+[2018/06/05 12:41:27 119][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  1388 MSPLogin(0,0,cfff6348) [in]
+[2018/06/05 12:41:27 119][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 109  lEngine_Start(ccc07332,92ffb910,1, 0) [in]
+[2018/06/05 12:41:27 119][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  327  load lgi
+[2018/06/05 12:41:27 119][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:27 119][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:27 119][Pxe48][Tx92ffc700][PRF] LLOADER    lloader.c  397  load lgi cost 0 (ms)
+[2018/06/05 12:41:27 119][Pxe48][Tx92ffc700][DBG] LENGINE    leng_shell 204  env=6801ac10,lgi,lgi_
+[2018/06/05 12:41:27 119][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_6:6:1:0
+[2018/06/05 12:41:27 119][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 275  lEngine_Start() [out] 0
+[2018/06/05 12:41:27 119][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 418  lEngine_SendMessage(6801ac10,1,4,,,) [in]
+[2018/06/05 12:41:27 119][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_6:11:1:0
+[2018/06/05 12:41:27 119][Pxe48][Tx88ff9700][DBG] MSPTHREAD  MSPThreadP 867  l_engine_6 RUN <l_engine_6>
+[2018/06/05 12:41:27 119][Pxe48][Tx88ff9700][DBG] LENGINE    leng_main. 565  ENGINE_MSG_LOAD
+[2018/06/05 12:41:27 119][Pxe48][Tx88ff9700][DBG] LENGINE    leng_main. 209  lEngine_LoadEnv(ccfa3b40,6801ac10) [in]
+[2018/06/05 12:41:27 119][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  327  load ecode
+[2018/06/05 12:41:27 119][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:27 119][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:27 119][Pxe48][Tx88ff9700][PRF] LLOADER    lloader.c  397  load ecode cost 0 (ms)
+[2018/06/05 12:41:27 119][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  327  load config
+[2018/06/05 12:41:27 119][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:27 120][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:27 120][Pxe48][Tx88ff9700][PRF] LLOADER    lloader.c  397  load config cost 0 (ms)
+[2018/06/05 12:41:27 120][Pxe48][Tx88ff9700][INF] LMOD       luac_logge 172  [config:43:use general cloud  ]
+[2018/06/05 12:41:27 120][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  327  load update
+[2018/06/05 12:41:27 120][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:27 120][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:27 120][Pxe48][Tx88ff9700][PRF] LLOADER    lloader.c  397  load update cost 0 (ms)
+[2018/06/05 12:41:27 120][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  327  load transport
+[2018/06/05 12:41:27 120][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:27 120][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:27 120][Pxe48][Tx88ff9700][PRF] LLOADER    lloader.c  397  load transport cost 1 (ms)
+[2018/06/05 12:41:27 120][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  327  load ns
+[2018/06/05 12:41:27 120][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:27 120][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:27 120][Pxe48][Tx88ff9700][PRF] LLOADER    lloader.c  397  load ns cost 0 (ms)
+[2018/06/05 12:41:27 121][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  327  load network
+[2018/06/05 12:41:27 121][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:27 121][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:27 121][Pxe48][Tx88ff9700][PRF] LLOADER    lloader.c  397  load network cost 1 (ms)
+[2018/06/05 12:41:27 121][Pxe48][Tx88ff9700][DBG] LENGINE    leng_main. 263  precall return 0
+[2018/06/05 12:41:27 121][Pxe48][Tx88ff9700][DBG] LENGINE    leng_main. 288  [lgi_], ACTIVE
+[2018/06/05 12:41:27 121][Pxe48][Tx88ff9700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(48048670,6801ac10) [in]
+[2018/06/05 12:41:27 121][Pxe48][Tx88ff9700][TRC] LMOD       luac_logge 170  [lgi:644:SYS_MSG_LOAD  ]
+[2018/06/05 12:41:27 121][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  327  load dkjson
+[2018/06/05 12:41:27 121][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:27 121][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][PRF] LLOADER    lloader.c  397  load dkjson cost 0 (ms)
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][INF] LLOADER    lloader.c  327  load debug
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][ERR] LLOADER    lloader.c  390  not found!
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][DBG] LENGINE    leng_main. 312  [lgi_], loaded
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(48048670,6801ac10) [in]
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][TRC] LMOD       luac_logge 170  [lgi:666:SYS_MSG_REGCB  msp_status_cb  func(48052fd0) ]
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][DBG] LENGINE    leng_main. 345  lEngine_LoadEnv() [out] successfully
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][DBG] LENGINE    leng_main. 571  lgi_, eng = l_engine_6, env = 6801ac10, L = 6801acb0
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][INF] LENGINE    leng_main. 572  l_engine_6 occupancy: 1 (33%)
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][DBG] LENGINE    leng_main. 539  ENGINE_MSG_RPC_SYNC
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][DBG] LENGINE    leng_main. 547  [lgi_], stat = 1
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(6801c5d0,6801ac10) [in]
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][TRC] LMOD       luac_logge 170  [lgi:292:LGI_MSG_INIT  ]
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][INF] LMOD       luac_logge 172  [lgi:299:lgi  lgi_  268436457  1522430704  ]
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][TRC] MSPCMN     msp_cmn.c  870  statusCbStub(,,param_num = 5)
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][PRF] LENGINE    leng_main. 189  callc(msp_status_cb) cost 0 ms
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][TRC] LMOD       luac_logge 170  [lgi:332:lgi params:  appid = 5b10f68a,work_dir = .  ]
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][INF] LMOD       luac_logge 172  [lgi:346:auth_time_str=  2018/06/05 12:41:27  ]
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][INF] LMOD       luac_logge 172  [lgi:352:auth_appid=  5b10f68a  ]
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][TRC] LMOD       luac_logge 170  [lgi:363:token:  nil  ]
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][INF] LMOD       luac_logge 172  [lgi:436:msc cver : 5.0.38.1195  ]
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][INF] LMOD       luac_logge 172  [lgi:479:ns_enable=  1  ]
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][INF] LMOD       luac_logge 172  [lgi:491:prot_ver=1  ]
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][INF] LMOD       luac_logge 172  [lgi:502:prot_type=tcp  ]
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:27 122][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 461  lEngine_SendMessage() [out] 0
+[2018/06/05 12:41:27 122][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 310  lEngine_Stop(6801ac10) [in]
+[2018/06/05 12:41:27 122][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_6:7:1:0
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][DBG] LENGINE    leng_main. 586  ENGINE_MSG_UNLOAD
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(4801bb70,6801ac10) [in]
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][TRC] LMOD       luac_logge 170  [lgi:653:SYS_MSG_UNLOAD  go bg!  ]
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:27 122][Pxe48][Tx88ff9700][DBG] LENGINE    leng_main. 623  [lgi_] active, go bg!
+[2018/06/05 12:41:27 122][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 369  lEngine_Stop() [out] 0
+[2018/06/05 12:41:27 122][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  1565 MSPLogin() [out] 0
+[2018/06/05 12:41:32 158][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     612  QIVWSessionBegin, DNN ivwVersion=1001.60.1421
+[2018/06/05 12:41:32 158][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     631  QIVWSessionBegin5(0,cfff6368,92ffbc7c) [in]
+[2018/06/05 12:41:32 158][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2806 MSPGetParam(ccc077ad, 92ffbac0, 92ffb8a8) [in]
+[2018/06/05 12:41:32 158][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2822 MSPGetParam() [out] -1
+[2018/06/05 12:41:32 158][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 109  lEngine_Start(ccc072a4,68014320,1, 0) [in]
+[2018/06/05 12:41:32 158][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  327  load ivw_local
+[2018/06/05 12:41:32 158][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:32 158][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:32 158][Pxe48][Tx92ffc700][PRF] LLOADER    lloader.c  397  load ivw_local cost 0 (ms)
+[2018/06/05 12:41:32 158][Pxe48][Tx92ffc700][DBG] LENGINE    leng_shell 204  env=6801c5d0,ivw_local,civw1PdHHBHc1JpG5r9GaaaFLlezkWHaJB
+[2018/06/05 12:41:32 158][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:6:1:1
+[2018/06/05 12:41:32 158][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 275  lEngine_Start() [out] 0
+[2018/06/05 12:41:32 158][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 418  lEngine_SendMessage(6801c5d0,6,2,,,) [in]
+[2018/06/05 12:41:32 158][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:11:1:0
+[2018/06/05 12:41:32 161][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 565  ENGINE_MSG_LOAD
+[2018/06/05 12:41:32 161][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 209  lEngine_LoadEnv(ccfa3b00,6801c5d0) [in]
+[2018/06/05 12:41:32 161][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ecode
+[2018/06/05 12:41:32 161][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:32 161][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:32 161][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ecode cost 0 (ms)
+[2018/06/05 12:41:32 161][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load auth
+[2018/06/05 12:41:32 161][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:32 161][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:32 161][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load auth cost 0 (ms)
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 106  luac_loadluacAuth enter
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 91   luac_openluacAuth enter
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 99   luac_openluacAuth leave
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 109  luac_loadluacAuth leave
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load config
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load config cost 0 (ms)
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [config:43:use general cloud  ]
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load update
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load update cost 0 (ms)
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load transport
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load transport cost 0 (ms)
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ns
+[2018/06/05 12:41:32 162][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:32 163][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:32 163][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ns cost 0 (ms)
+[2018/06/05 12:41:32 163][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load network
+[2018/06/05 12:41:32 163][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:32 163][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:32 163][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load network cost 0 (ms)
+[2018/06/05 12:41:32 163][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 118  luac_auth_new enter
+[2018/06/05 12:41:32 163][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 126  luac_auth_new leave
+[2018/06/05 12:41:32 163][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 263  precall return 0
+[2018/06/05 12:41:32 163][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 288  [civw1PdHHBHc1JpG5r9GaaaFLlezkWHaJB], ACTIVE
+[2018/06/05 12:41:32 163][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(540667f0,6801c5d0) [in]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1287:os_type is:  Linux  ]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1296:ivw loaded!  ]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1298:1001.60.1421  ]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 312  [civw1PdHHBHc1JpG5r9GaaaFLlezkWHaJB], loaded
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(5402b060,6801c5d0) [in]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1231:SYS_MSG_REGCB  msp_status_cb  func(540667f0) ]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 345  lEngine_LoadEnv() [out] successfully
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 571  civw1PdHHBHc1JpG5r9GaaaFLlezkWHaJB, eng = l_engine_5, env = 6801c5d0, L = 68025bc0
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 572  l_engine_5 occupancy: 1 (33%)
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 539  ENGINE_MSG_RPC_SYNC
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 547  [civw1PdHHBHc1JpG5r9GaaaFLlezkWHaJB], stat = 1
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(68040350,6801c5d0) [in]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1046:IVW_LOCAL_INIT_CHECK  ]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1052:ivw_res_path:  fo|res/ivw/wakeupresource.jet  ]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:681:lgi:  nil  nil  ]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:685:fo|res/ivw/wakeupresource.jet  1  ]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      118  Ivw_ResCheck() [in]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      125  Ivw_ResCheck(fo, res/ivw/wakeupresource.jet, 0, 0)
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      234  Ivw_ResCheck(0) [out]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:476:err  0  ]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:477:res_ver  3  ]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:478:res_appid_md5    ]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:479:res_id    ]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:480:|%fsoniah%=|%fwwnc%=%2e73dbdd%+%ubtnc%=%d3ce733?e0ec5e34dea46a15be5f>33b%+%ubts~wb%=%c%z+%nqpphuc%=|%irj%=5+%phuct%=\|%nc%=7+%sbs%=%nfh4kfi5in5ofh4%+%soubtohkc%=6327z+|%nc%=6+%sbs%=%nfh4kfi5mn6vn3ubi5%+%soubtohkc%=6327zZz+%ubttn}b%=>>7737+%ubtsnjb%=6250?222>>+%ubtqbu%=%q1777%z  ]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:488:speech_plus_setting  0  ]
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load dkjson
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load dkjson cost 0 (ms)
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load debug
+[2018/06/05 12:41:32 164][Pxe48][Tx897fa700][ERR] LLOADER    lloader.c  390  not found!
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ni2hao3  0  1450  ]
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ji1qi4ren2  1  1450  ]
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:572:d  ]
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:578:appid not match  5b10f68a  5b04cecc  ]
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:701:res check failed! ret=  11210  ]
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:1062:init_check err:  11210  ]
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:32 165][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 461  lEngine_SendMessage() [out] 0
+[2018/06/05 12:41:32 165][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 310  lEngine_Stop(6801c5d0) [in]
+[2018/06/05 12:41:32 165][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:7:1:1
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 586  ENGINE_MSG_UNLOAD
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(5404e1a0,6801c5d0) [in]
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1208:SYS_MSG_UNLOAD  ]
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 545  lEngine_Exit(6801c5d0) [in]
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][DBG] LENGINE    leng_shell 549  [civw1PdHHBHc1JpG5r9GaaaFLlezkWHaJB] dying...
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:9:1:0
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 582  lEngine_Exit() [out] 0
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 623  [civw1PdHHBHc1JpG5r9GaaaFLlezkWHaJB] active, go bg!
+[2018/06/05 12:41:32 165][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 369  lEngine_Stop() [out] 0
+[2018/06/05 12:41:32 165][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     827  QIVWSessionBegin() [out] 11210
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 651  ENGINE_MSG_STOP
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 671  [civw1PdHHBHc1JpG5r9GaaaFLlezkWHaJB] bg, unload directly!
+[2018/06/05 12:41:32 165][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 676  l_engine_5 occupancy: 0 (0%)
+[2018/06/05 12:41:37 222][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     612  QIVWSessionBegin, DNN ivwVersion=1001.60.1421
+[2018/06/05 12:41:37 222][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     631  QIVWSessionBegin5(0,cfff6368,92ffbc7c) [in]
+[2018/06/05 12:41:37 222][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2806 MSPGetParam(ccc077ad, 92ffbac0, 92ffb8a8) [in]
+[2018/06/05 12:41:37 222][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2822 MSPGetParam() [out] -1
+[2018/06/05 12:41:37 222][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 109  lEngine_Start(ccc072a4,68014320,1, 0) [in]
+[2018/06/05 12:41:37 222][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  327  load ivw_local
+[2018/06/05 12:41:37 222][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:37 222][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:37 223][Pxe48][Tx92ffc700][PRF] LLOADER    lloader.c  397  load ivw_local cost 0 (ms)
+[2018/06/05 12:41:37 223][Pxe48][Tx92ffc700][DBG] LENGINE    leng_shell 204  env=680404c0,ivw_local,civw1PdHHBHc1JnH5bPdaaaFLlezkWHaJB
+[2018/06/05 12:41:37 223][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:6:1:1
+[2018/06/05 12:41:37 223][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 275  lEngine_Start() [out] 0
+[2018/06/05 12:41:37 223][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 418  lEngine_SendMessage(680404c0,6,2,,,) [in]
+[2018/06/05 12:41:37 223][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:11:1:0
+[2018/06/05 12:41:37 223][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 565  ENGINE_MSG_LOAD
+[2018/06/05 12:41:37 223][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 209  lEngine_LoadEnv(ccfa3b00,680404c0) [in]
+[2018/06/05 12:41:37 223][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ecode
+[2018/06/05 12:41:37 223][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:37 223][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:37 223][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ecode cost 0 (ms)
+[2018/06/05 12:41:37 223][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load auth
+[2018/06/05 12:41:37 223][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:37 223][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:37 223][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load auth cost 0 (ms)
+[2018/06/05 12:41:37 224][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 106  luac_loadluacAuth enter
+[2018/06/05 12:41:37 224][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 91   luac_openluacAuth enter
+[2018/06/05 12:41:37 224][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 99   luac_openluacAuth leave
+[2018/06/05 12:41:37 224][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 109  luac_loadluacAuth leave
+[2018/06/05 12:41:37 224][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load config
+[2018/06/05 12:41:37 224][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:37 224][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:37 224][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load config cost 0 (ms)
+[2018/06/05 12:41:37 224][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [config:43:use general cloud  ]
+[2018/06/05 12:41:37 224][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load update
+[2018/06/05 12:41:37 224][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:37 224][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:37 224][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load update cost 0 (ms)
+[2018/06/05 12:41:37 224][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load transport
+[2018/06/05 12:41:37 224][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:37 224][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:37 224][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load transport cost 0 (ms)
+[2018/06/05 12:41:37 225][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ns
+[2018/06/05 12:41:37 225][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:37 225][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:37 225][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ns cost 0 (ms)
+[2018/06/05 12:41:37 225][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load network
+[2018/06/05 12:41:37 225][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:37 225][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:37 225][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load network cost 0 (ms)
+[2018/06/05 12:41:37 225][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 118  luac_auth_new enter
+[2018/06/05 12:41:37 225][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 126  luac_auth_new leave
+[2018/06/05 12:41:37 225][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 263  precall return 0
+[2018/06/05 12:41:37 225][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 288  [civw1PdHHBHc1JnH5bPdaaaFLlezkWHaJB], ACTIVE
+[2018/06/05 12:41:37 225][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(5406d0e0,680404c0) [in]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1287:os_type is:  Linux  ]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1296:ivw loaded!  ]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1298:1001.60.1421  ]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 312  [civw1PdHHBHc1JnH5bPdaaaFLlezkWHaJB], loaded
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(5406d0e0,680404c0) [in]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1231:SYS_MSG_REGCB  msp_status_cb  func(540375f0) ]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 345  lEngine_LoadEnv() [out] successfully
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 571  civw1PdHHBHc1JnH5bPdaaaFLlezkWHaJB, eng = l_engine_5, env = 680404c0, L = 68025bc0
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 572  l_engine_5 occupancy: 1 (33%)
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 539  ENGINE_MSG_RPC_SYNC
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 547  [civw1PdHHBHc1JnH5bPdaaaFLlezkWHaJB], stat = 1
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(68014cc0,680404c0) [in]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1046:IVW_LOCAL_INIT_CHECK  ]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1052:ivw_res_path:  fo|res/ivw/wakeupresource.jet  ]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:681:lgi:  nil  nil  ]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:685:fo|res/ivw/wakeupresource.jet  1  ]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      118  Ivw_ResCheck() [in]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      125  Ivw_ResCheck(fo, res/ivw/wakeupresource.jet, 0, 0)
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      234  Ivw_ResCheck(0) [out]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:476:err  0  ]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:477:res_ver  3  ]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:478:res_appid_md5    ]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:479:res_id    ]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:480:|%fsoniah%=|%fwwnc%=%2e73dbdd%+%ubtnc%=%d3ce733?e0ec5e34dea46a15be5f>33b%+%ubts~wb%=%c%z+%nqpphuc%=|%irj%=5+%phuct%=\|%nc%=7+%sbs%=%nfh4kfi5in5ofh4%+%soubtohkc%=6327z+|%nc%=6+%sbs%=%nfh4kfi5mn6vn3ubi5%+%soubtohkc%=6327zZz+%ubttn}b%=>>7737+%ubtsnjb%=6250?222>>+%ubtqbu%=%q1777%z  ]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:488:speech_plus_setting  0  ]
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load dkjson
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load dkjson cost 0 (ms)
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load debug
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][ERR] LLOADER    lloader.c  390  not found!
+[2018/06/05 12:41:37 226][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ni2hao3  0  1450  ]
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ji1qi4ren2  1  1450  ]
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:572:d  ]
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:578:appid not match  5b10f68a  5b04cecc  ]
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:701:res check failed! ret=  11210  ]
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:1062:init_check err:  11210  ]
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:37 227][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 461  lEngine_SendMessage() [out] 0
+[2018/06/05 12:41:37 227][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 310  lEngine_Stop(680404c0) [in]
+[2018/06/05 12:41:37 227][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:7:1:1
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 586  ENGINE_MSG_UNLOAD
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(540150f0,680404c0) [in]
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1208:SYS_MSG_UNLOAD  ]
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 545  lEngine_Exit(680404c0) [in]
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][DBG] LENGINE    leng_shell 549  [civw1PdHHBHc1JnH5bPdaaaFLlezkWHaJB] dying...
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:9:1:0
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 582  lEngine_Exit() [out] 0
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 623  [civw1PdHHBHc1JnH5bPdaaaFLlezkWHaJB] active, go bg!
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 651  ENGINE_MSG_STOP
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 671  [civw1PdHHBHc1JnH5bPdaaaFLlezkWHaJB] bg, unload directly!
+[2018/06/05 12:41:37 227][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 676  l_engine_5 occupancy: 0 (0%)
+[2018/06/05 12:41:37 227][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 369  lEngine_Stop() [out] 0
+[2018/06/05 12:41:37 227][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     827  QIVWSessionBegin() [out] 11210
+[2018/06/05 12:41:42 230][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     612  QIVWSessionBegin, DNN ivwVersion=1001.60.1421
+[2018/06/05 12:41:42 230][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     631  QIVWSessionBegin5(0,cfff6368,92ffbc7c) [in]
+[2018/06/05 12:41:42 230][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2806 MSPGetParam(ccc077ad, 92ffbac0, 92ffb8a8) [in]
+[2018/06/05 12:41:42 230][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2822 MSPGetParam() [out] -1
+[2018/06/05 12:41:42 230][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 109  lEngine_Start(ccc072a4,68014270,1, 0) [in]
+[2018/06/05 12:41:42 230][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  327  load ivw_local
+[2018/06/05 12:41:42 230][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:42 230][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:42 230][Pxe48][Tx92ffc700][PRF] LLOADER    lloader.c  397  load ivw_local cost 0 (ms)
+[2018/06/05 12:41:42 231][Pxe48][Tx92ffc700][DBG] LENGINE    leng_shell 204  env=680405e0,ivw_local,civw1PdHHBHc1JnP5yrraalrFawydvgapn
+[2018/06/05 12:41:42 231][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:6:1:1
+[2018/06/05 12:41:42 231][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 275  lEngine_Start() [out] 0
+[2018/06/05 12:41:42 231][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 418  lEngine_SendMessage(680405e0,6,2,,,) [in]
+[2018/06/05 12:41:42 231][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:11:1:0
+[2018/06/05 12:41:42 231][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 565  ENGINE_MSG_LOAD
+[2018/06/05 12:41:42 231][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 209  lEngine_LoadEnv(ccfa3b00,680405e0) [in]
+[2018/06/05 12:41:42 231][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ecode
+[2018/06/05 12:41:42 231][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:42 231][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:42 231][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ecode cost 0 (ms)
+[2018/06/05 12:41:42 231][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load auth
+[2018/06/05 12:41:42 231][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:42 231][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:42 231][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load auth cost 0 (ms)
+[2018/06/05 12:41:42 232][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 106  luac_loadluacAuth enter
+[2018/06/05 12:41:42 232][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 91   luac_openluacAuth enter
+[2018/06/05 12:41:42 232][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 99   luac_openluacAuth leave
+[2018/06/05 12:41:42 232][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 109  luac_loadluacAuth leave
+[2018/06/05 12:41:42 232][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load config
+[2018/06/05 12:41:42 232][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:42 232][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:42 232][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load config cost 0 (ms)
+[2018/06/05 12:41:42 232][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [config:43:use general cloud  ]
+[2018/06/05 12:41:42 232][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load update
+[2018/06/05 12:41:42 232][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:42 232][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:42 232][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load update cost 0 (ms)
+[2018/06/05 12:41:42 232][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load transport
+[2018/06/05 12:41:42 232][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:42 232][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:42 232][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load transport cost 0 (ms)
+[2018/06/05 12:41:42 233][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ns
+[2018/06/05 12:41:42 233][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:42 233][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:42 233][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ns cost 0 (ms)
+[2018/06/05 12:41:42 233][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load network
+[2018/06/05 12:41:42 233][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:42 233][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:42 233][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load network cost 0 (ms)
+[2018/06/05 12:41:42 233][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 118  luac_auth_new enter
+[2018/06/05 12:41:42 233][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 126  luac_auth_new leave
+[2018/06/05 12:41:42 233][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 263  precall return 0
+[2018/06/05 12:41:42 233][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 288  [civw1PdHHBHc1JnP5yrraalrFawydvgapn], ACTIVE
+[2018/06/05 12:41:42 233][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54069fc0,680405e0) [in]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1287:os_type is:  Linux  ]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1296:ivw loaded!  ]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1298:1001.60.1421  ]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 312  [civw1PdHHBHc1JnP5yrraalrFawydvgapn], loaded
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54069fc0,680405e0) [in]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1231:SYS_MSG_REGCB  msp_status_cb  func(540390c0) ]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 345  lEngine_LoadEnv() [out] successfully
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 571  civw1PdHHBHc1JnP5yrraalrFawydvgapn, eng = l_engine_5, env = 680405e0, L = 68025bc0
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 572  l_engine_5 occupancy: 1 (33%)
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 539  ENGINE_MSG_RPC_SYNC
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 547  [civw1PdHHBHc1JnP5yrraalrFawydvgapn], stat = 1
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(68025390,680405e0) [in]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1046:IVW_LOCAL_INIT_CHECK  ]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1052:ivw_res_path:  fo|res/ivw/wakeupresource.jet  ]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:681:lgi:  nil  nil  ]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:685:fo|res/ivw/wakeupresource.jet  1  ]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      118  Ivw_ResCheck() [in]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      125  Ivw_ResCheck(fo, res/ivw/wakeupresource.jet, 0, 0)
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      234  Ivw_ResCheck(0) [out]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:476:err  0  ]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:477:res_ver  3  ]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:478:res_appid_md5    ]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:479:res_id    ]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:480:|%fsoniah%=|%fwwnc%=%2e73dbdd%+%ubtnc%=%d3ce733?e0ec5e34dea46a15be5f>33b%+%ubts~wb%=%c%z+%nqpphuc%=|%irj%=5+%phuct%=\|%nc%=7+%sbs%=%nfh4kfi5in5ofh4%+%soubtohkc%=6327z+|%nc%=6+%sbs%=%nfh4kfi5mn6vn3ubi5%+%soubtohkc%=6327zZz+%ubttn}b%=>>7737+%ubtsnjb%=6250?222>>+%ubtqbu%=%q1777%z  ]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:488:speech_plus_setting  0  ]
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load dkjson
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load dkjson cost 0 (ms)
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load debug
+[2018/06/05 12:41:42 234][Pxe48][Tx897fa700][ERR] LLOADER    lloader.c  390  not found!
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ni2hao3  0  1450  ]
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ji1qi4ren2  1  1450  ]
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:572:d  ]
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:578:appid not match  5b10f68a  5b04cecc  ]
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:701:res check failed! ret=  11210  ]
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:1062:init_check err:  11210  ]
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:42 235][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 461  lEngine_SendMessage() [out] 0
+[2018/06/05 12:41:42 235][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 310  lEngine_Stop(680405e0) [in]
+[2018/06/05 12:41:42 235][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:7:1:1
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 586  ENGINE_MSG_UNLOAD
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54010450,680405e0) [in]
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1208:SYS_MSG_UNLOAD  ]
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 545  lEngine_Exit(680405e0) [in]
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][DBG] LENGINE    leng_shell 549  [civw1PdHHBHc1JnP5yrraalrFawydvgapn] dying...
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:9:1:0
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 582  lEngine_Exit() [out] 0
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 623  [civw1PdHHBHc1JnP5yrraalrFawydvgapn] active, go bg!
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 651  ENGINE_MSG_STOP
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 671  [civw1PdHHBHc1JnP5yrraalrFawydvgapn] bg, unload directly!
+[2018/06/05 12:41:42 235][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 676  l_engine_5 occupancy: 0 (0%)
+[2018/06/05 12:41:42 235][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 369  lEngine_Stop() [out] 0
+[2018/06/05 12:41:42 235][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     827  QIVWSessionBegin() [out] 11210
+[2018/06/05 12:41:47 239][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     612  QIVWSessionBegin, DNN ivwVersion=1001.60.1421
+[2018/06/05 12:41:47 239][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     631  QIVWSessionBegin5(0,cfff6368,92ffbc7c) [in]
+[2018/06/05 12:41:47 239][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2806 MSPGetParam(ccc077ad, 92ffbac0, 92ffb8a8) [in]
+[2018/06/05 12:41:47 239][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2822 MSPGetParam() [out] -1
+[2018/06/05 12:41:47 239][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 109  lEngine_Start(ccc072a4,6803d9e0,1, 0) [in]
+[2018/06/05 12:41:47 239][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  327  load ivw_local
+[2018/06/05 12:41:47 239][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:47 239][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:47 239][Pxe48][Tx92ffc700][PRF] LLOADER    lloader.c  397  load ivw_local cost 0 (ms)
+[2018/06/05 12:41:47 239][Pxe48][Tx92ffc700][DBG] LENGINE    leng_shell 204  env=680405e0,ivw_local,civw1PdHHBHc1JnC5N4IaaaQxBVCkMtHZF
+[2018/06/05 12:41:47 239][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:6:1:1
+[2018/06/05 12:41:47 239][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 275  lEngine_Start() [out] 0
+[2018/06/05 12:41:47 239][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 418  lEngine_SendMessage(680405e0,6,2,,,) [in]
+[2018/06/05 12:41:47 239][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 565  ENGINE_MSG_LOAD
+[2018/06/05 12:41:47 239][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 209  lEngine_LoadEnv(ccfa3b00,680405e0) [in]
+[2018/06/05 12:41:47 240][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ecode
+[2018/06/05 12:41:47 240][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:47 240][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:47 240][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ecode cost 0 (ms)
+[2018/06/05 12:41:47 240][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load auth
+[2018/06/05 12:41:47 240][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:47 240][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:47 240][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load auth cost 0 (ms)
+[2018/06/05 12:41:47 240][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 106  luac_loadluacAuth enter
+[2018/06/05 12:41:47 240][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 91   luac_openluacAuth enter
+[2018/06/05 12:41:47 240][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 99   luac_openluacAuth leave
+[2018/06/05 12:41:47 240][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 109  luac_loadluacAuth leave
+[2018/06/05 12:41:47 240][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load config
+[2018/06/05 12:41:47 240][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:47 240][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:47 240][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load config cost 0 (ms)
+[2018/06/05 12:41:47 240][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [config:43:use general cloud  ]
+[2018/06/05 12:41:47 241][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load update
+[2018/06/05 12:41:47 241][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:47 241][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:47 241][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load update cost 0 (ms)
+[2018/06/05 12:41:47 241][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load transport
+[2018/06/05 12:41:47 241][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:47 241][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:47 241][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load transport cost 0 (ms)
+[2018/06/05 12:41:47 241][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ns
+[2018/06/05 12:41:47 241][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:47 241][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:47 241][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ns cost 0 (ms)
+[2018/06/05 12:41:47 241][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load network
+[2018/06/05 12:41:47 241][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:47 241][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load network cost 0 (ms)
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 118  luac_auth_new enter
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 126  luac_auth_new leave
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 263  precall return 0
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 288  [civw1PdHHBHc1JnC5N4IaaaQxBVCkMtHZF], ACTIVE
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54069fa0,680405e0) [in]
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1287:os_type is:  Linux  ]
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1296:ivw loaded!  ]
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1298:1001.60.1421  ]
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 312  [civw1PdHHBHc1JnC5N4IaaaQxBVCkMtHZF], loaded
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54069fa0,680405e0) [in]
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1231:SYS_MSG_REGCB  msp_status_cb  func(54059c20) ]
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 345  lEngine_LoadEnv() [out] successfully
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 571  civw1PdHHBHc1JnC5N4IaaaQxBVCkMtHZF, eng = l_engine_5, env = 680405e0, L = 68025bc0
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 572  l_engine_5 occupancy: 1 (33%)
+[2018/06/05 12:41:47 242][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:11:1:0
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 539  ENGINE_MSG_RPC_SYNC
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 547  [civw1PdHHBHc1JnC5N4IaaaQxBVCkMtHZF], stat = 1
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(68014c20,680405e0) [in]
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1046:IVW_LOCAL_INIT_CHECK  ]
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1052:ivw_res_path:  fo|res/ivw/wakeupresource.jet  ]
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:681:lgi:  nil  nil  ]
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:685:fo|res/ivw/wakeupresource.jet  1  ]
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      118  Ivw_ResCheck() [in]
+[2018/06/05 12:41:47 242][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      125  Ivw_ResCheck(fo, res/ivw/wakeupresource.jet, 0, 0)
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      234  Ivw_ResCheck(0) [out]
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:476:err  0  ]
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:477:res_ver  3  ]
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:478:res_appid_md5    ]
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:479:res_id    ]
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:480:|%fsoniah%=|%fwwnc%=%2e73dbdd%+%ubtnc%=%d3ce733?e0ec5e34dea46a15be5f>33b%+%ubts~wb%=%c%z+%nqpphuc%=|%irj%=5+%phuct%=\|%nc%=7+%sbs%=%nfh4kfi5in5ofh4%+%soubtohkc%=6327z+|%nc%=6+%sbs%=%nfh4kfi5mn6vn3ubi5%+%soubtohkc%=6327zZz+%ubttn}b%=>>7737+%ubtsnjb%=6250?222>>+%ubtqbu%=%q1777%z  ]
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:488:speech_plus_setting  0  ]
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load dkjson
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load dkjson cost 0 (ms)
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load debug
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][ERR] LLOADER    lloader.c  390  not found!
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ni2hao3  0  1450  ]
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ji1qi4ren2  1  1450  ]
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:572:d  ]
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:578:appid not match  5b10f68a  5b04cecc  ]
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:701:res check failed! ret=  11210  ]
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:1062:init_check err:  11210  ]
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:47 243][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 461  lEngine_SendMessage() [out] 0
+[2018/06/05 12:41:47 243][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 310  lEngine_Stop(680405e0) [in]
+[2018/06/05 12:41:47 243][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:7:1:1
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 586  ENGINE_MSG_UNLOAD
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54010460,680405e0) [in]
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1208:SYS_MSG_UNLOAD  ]
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 545  lEngine_Exit(680405e0) [in]
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][DBG] LENGINE    leng_shell 549  [civw1PdHHBHc1JnC5N4IaaaQxBVCkMtHZF] dying...
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:9:1:0
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 582  lEngine_Exit() [out] 0
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:41:47 243][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:47 244][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 623  [civw1PdHHBHc1JnC5N4IaaaQxBVCkMtHZF] active, go bg!
+[2018/06/05 12:41:47 244][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 651  ENGINE_MSG_STOP
+[2018/06/05 12:41:47 244][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 671  [civw1PdHHBHc1JnC5N4IaaaQxBVCkMtHZF] bg, unload directly!
+[2018/06/05 12:41:47 244][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 676  l_engine_5 occupancy: 0 (0%)
+[2018/06/05 12:41:47 244][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 369  lEngine_Stop() [out] 0
+[2018/06/05 12:41:47 244][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     827  QIVWSessionBegin() [out] 11210
+[2018/06/05 12:41:52 248][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     612  QIVWSessionBegin, DNN ivwVersion=1001.60.1421
+[2018/06/05 12:41:52 248][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     631  QIVWSessionBegin5(0,cfff6368,92ffbc7c) [in]
+[2018/06/05 12:41:52 248][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2806 MSPGetParam(ccc077ad, 92ffbac0, 92ffb8a8) [in]
+[2018/06/05 12:41:52 248][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2822 MSPGetParam() [out] -1
+[2018/06/05 12:41:52 248][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 109  lEngine_Start(ccc072a4,680405e0,1, 0) [in]
+[2018/06/05 12:41:52 248][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  327  load ivw_local
+[2018/06/05 12:41:52 249][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:52 249][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:52 249][Pxe48][Tx92ffc700][PRF] LLOADER    lloader.c  397  load ivw_local cost 0 (ms)
+[2018/06/05 12:41:52 249][Pxe48][Tx92ffc700][DBG] LENGINE    leng_shell 204  env=6801c650,ivw_local,civw1PdHHBHc1JnE5ei9aaw0luThHuFlYl
+[2018/06/05 12:41:52 249][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:6:1:1
+[2018/06/05 12:41:52 249][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 275  lEngine_Start() [out] 0
+[2018/06/05 12:41:52 249][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 418  lEngine_SendMessage(6801c650,6,2,,,) [in]
+[2018/06/05 12:41:52 249][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:11:1:0
+[2018/06/05 12:41:52 249][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 565  ENGINE_MSG_LOAD
+[2018/06/05 12:41:52 273][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 209  lEngine_LoadEnv(ccfa3b00,6801c650) [in]
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ecode
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ecode cost 0 (ms)
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load auth
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load auth cost 0 (ms)
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 106  luac_loadluacAuth enter
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 91   luac_openluacAuth enter
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 99   luac_openluacAuth leave
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 109  luac_loadluacAuth leave
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load config
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load config cost 0 (ms)
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [config:43:use general cloud  ]
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load update
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load update cost 0 (ms)
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load transport
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:52 274][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load transport cost 0 (ms)
+[2018/06/05 12:41:52 275][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ns
+[2018/06/05 12:41:52 275][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:52 275][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:52 275][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ns cost 0 (ms)
+[2018/06/05 12:41:52 275][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load network
+[2018/06/05 12:41:52 275][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:52 275][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:52 275][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load network cost 0 (ms)
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 118  luac_auth_new enter
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 126  luac_auth_new leave
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 263  precall return 0
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 288  [civw1PdHHBHc1JnE5ei9aaw0luThHuFlYl], ACTIVE
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54069fc0,6801c650) [in]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1287:os_type is:  Linux  ]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1296:ivw loaded!  ]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1298:1001.60.1421  ]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 312  [civw1PdHHBHc1JnE5ei9aaw0luThHuFlYl], loaded
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54069fc0,6801c650) [in]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1231:SYS_MSG_REGCB  msp_status_cb  func(5404e6b0) ]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 345  lEngine_LoadEnv() [out] successfully
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 571  civw1PdHHBHc1JnE5ei9aaw0luThHuFlYl, eng = l_engine_5, env = 6801c650, L = 68025bc0
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 572  l_engine_5 occupancy: 1 (33%)
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 539  ENGINE_MSG_RPC_SYNC
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 547  [civw1PdHHBHc1JnE5ei9aaw0luThHuFlYl], stat = 1
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(6803ff30,6801c650) [in]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1046:IVW_LOCAL_INIT_CHECK  ]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1052:ivw_res_path:  fo|res/ivw/wakeupresource.jet  ]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:681:lgi:  nil  nil  ]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:685:fo|res/ivw/wakeupresource.jet  1  ]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      118  Ivw_ResCheck() [in]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      125  Ivw_ResCheck(fo, res/ivw/wakeupresource.jet, 0, 0)
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      234  Ivw_ResCheck(0) [out]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:476:err  0  ]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:477:res_ver  3  ]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:478:res_appid_md5    ]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:479:res_id    ]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:480:|%fsoniah%=|%fwwnc%=%2e73dbdd%+%ubtnc%=%d3ce733?e0ec5e34dea46a15be5f>33b%+%ubts~wb%=%c%z+%nqpphuc%=|%irj%=5+%phuct%=\|%nc%=7+%sbs%=%nfh4kfi5in5ofh4%+%soubtohkc%=6327z+|%nc%=6+%sbs%=%nfh4kfi5mn6vn3ubi5%+%soubtohkc%=6327zZz+%ubttn}b%=>>7737+%ubtsnjb%=6250?222>>+%ubtqbu%=%q1777%z  ]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:488:speech_plus_setting  0  ]
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load dkjson
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:52 276][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load dkjson cost 0 (ms)
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load debug
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][ERR] LLOADER    lloader.c  390  not found!
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ni2hao3  0  1450  ]
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ji1qi4ren2  1  1450  ]
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:572:d  ]
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:578:appid not match  5b10f68a  5b04cecc  ]
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:701:res check failed! ret=  11210  ]
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:1062:init_check err:  11210  ]
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:52 277][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 461  lEngine_SendMessage() [out] 0
+[2018/06/05 12:41:52 277][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 310  lEngine_Stop(6801c650) [in]
+[2018/06/05 12:41:52 277][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:7:1:1
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 586  ENGINE_MSG_UNLOAD
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54010450,6801c650) [in]
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1208:SYS_MSG_UNLOAD  ]
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 545  lEngine_Exit(6801c650) [in]
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][DBG] LENGINE    leng_shell 549  [civw1PdHHBHc1JnE5ei9aaw0luThHuFlYl] dying...
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:9:1:0
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 582  lEngine_Exit() [out] 0
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 623  [civw1PdHHBHc1JnE5ei9aaw0luThHuFlYl] active, go bg!
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 651  ENGINE_MSG_STOP
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 671  [civw1PdHHBHc1JnE5ei9aaw0luThHuFlYl] bg, unload directly!
+[2018/06/05 12:41:52 277][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 676  l_engine_5 occupancy: 0 (0%)
+[2018/06/05 12:41:52 277][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 369  lEngine_Stop() [out] 0
+[2018/06/05 12:41:52 277][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     827  QIVWSessionBegin() [out] 11210
+[2018/06/05 12:41:57 300][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     612  QIVWSessionBegin, DNN ivwVersion=1001.60.1421
+[2018/06/05 12:41:57 300][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     631  QIVWSessionBegin5(0,cfff6368,92ffbc7c) [in]
+[2018/06/05 12:41:57 300][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2806 MSPGetParam(ccc077ad, 92ffbac0, 92ffb8a8) [in]
+[2018/06/05 12:41:57 300][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2822 MSPGetParam() [out] -1
+[2018/06/05 12:41:57 300][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 109  lEngine_Start(ccc072a4,680405e0,1, 0) [in]
+[2018/06/05 12:41:57 300][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  327  load ivw_local
+[2018/06/05 12:41:57 300][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:57 300][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:57 300][Pxe48][Tx92ffc700][PRF] LLOADER    lloader.c  397  load ivw_local cost 0 (ms)
+[2018/06/05 12:41:57 300][Pxe48][Tx92ffc700][DBG] LENGINE    leng_shell 204  env=6803f220,ivw_local,civw1PdHHBHc1Jn-5X6qaaw0luThHuFlYl
+[2018/06/05 12:41:57 300][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:6:1:1
+[2018/06/05 12:41:57 300][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 275  lEngine_Start() [out] 0
+[2018/06/05 12:41:57 300][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 418  lEngine_SendMessage(6803f220,6,2,,,) [in]
+[2018/06/05 12:41:57 300][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 565  ENGINE_MSG_LOAD
+[2018/06/05 12:41:57 325][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 209  lEngine_LoadEnv(ccfa3b00,6803f220) [in]
+[2018/06/05 12:41:57 325][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ecode
+[2018/06/05 12:41:57 325][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:57 325][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:57 325][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ecode cost 0 (ms)
+[2018/06/05 12:41:57 325][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load auth
+[2018/06/05 12:41:57 325][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:57 325][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:57 325][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load auth cost 0 (ms)
+[2018/06/05 12:41:57 326][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 106  luac_loadluacAuth enter
+[2018/06/05 12:41:57 326][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 91   luac_openluacAuth enter
+[2018/06/05 12:41:57 326][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 99   luac_openluacAuth leave
+[2018/06/05 12:41:57 326][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 109  luac_loadluacAuth leave
+[2018/06/05 12:41:57 326][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load config
+[2018/06/05 12:41:57 326][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:57 326][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:57 326][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load config cost 0 (ms)
+[2018/06/05 12:41:57 326][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [config:43:use general cloud  ]
+[2018/06/05 12:41:57 326][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load update
+[2018/06/05 12:41:57 326][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:57 326][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:57 326][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load update cost 0 (ms)
+[2018/06/05 12:41:57 326][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load transport
+[2018/06/05 12:41:57 326][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:57 326][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:57 326][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load transport cost 0 (ms)
+[2018/06/05 12:41:57 327][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ns
+[2018/06/05 12:41:57 327][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:57 327][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:57 327][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ns cost 0 (ms)
+[2018/06/05 12:41:57 327][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load network
+[2018/06/05 12:41:57 327][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:57 327][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:57 327][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load network cost 0 (ms)
+[2018/06/05 12:41:57 327][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 118  luac_auth_new enter
+[2018/06/05 12:41:57 327][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 126  luac_auth_new leave
+[2018/06/05 12:41:57 327][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 263  precall return 0
+[2018/06/05 12:41:57 327][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 288  [civw1PdHHBHc1Jn-5X6qaaw0luThHuFlYl], ACTIVE
+[2018/06/05 12:41:57 327][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54069fc0,6803f220) [in]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1287:os_type is:  Linux  ]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1296:ivw loaded!  ]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1298:1001.60.1421  ]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 312  [civw1PdHHBHc1Jn-5X6qaaw0luThHuFlYl], loaded
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54069fc0,6803f220) [in]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1231:SYS_MSG_REGCB  msp_status_cb  func(540395e0) ]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 345  lEngine_LoadEnv() [out] successfully
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 571  civw1PdHHBHc1Jn-5X6qaaw0luThHuFlYl, eng = l_engine_5, env = 6803f220, L = 68013dd0
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 572  l_engine_5 occupancy: 1 (33%)
+[2018/06/05 12:41:57 328][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:11:1:0
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 539  ENGINE_MSG_RPC_SYNC
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 547  [civw1PdHHBHc1Jn-5X6qaaw0luThHuFlYl], stat = 1
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(680143e0,6803f220) [in]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1046:IVW_LOCAL_INIT_CHECK  ]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1052:ivw_res_path:  fo|res/ivw/wakeupresource.jet  ]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:681:lgi:  nil  nil  ]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:685:fo|res/ivw/wakeupresource.jet  1  ]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      118  Ivw_ResCheck() [in]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      125  Ivw_ResCheck(fo, res/ivw/wakeupresource.jet, 0, 0)
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      234  Ivw_ResCheck(0) [out]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:476:err  0  ]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:477:res_ver  3  ]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:478:res_appid_md5    ]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:479:res_id    ]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:480:|%fsoniah%=|%fwwnc%=%2e73dbdd%+%ubtnc%=%d3ce733?e0ec5e34dea46a15be5f>33b%+%ubts~wb%=%c%z+%nqpphuc%=|%irj%=5+%phuct%=\|%nc%=7+%sbs%=%nfh4kfi5in5ofh4%+%soubtohkc%=6327z+|%nc%=6+%sbs%=%nfh4kfi5mn6vn3ubi5%+%soubtohkc%=6327zZz+%ubttn}b%=>>7737+%ubtsnjb%=6250?222>>+%ubtqbu%=%q1777%z  ]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:488:speech_plus_setting  0  ]
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load dkjson
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load dkjson cost 0 (ms)
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load debug
+[2018/06/05 12:41:57 328][Pxe48][Tx897fa700][ERR] LLOADER    lloader.c  390  not found!
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ni2hao3  0  1450  ]
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ji1qi4ren2  1  1450  ]
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:572:d  ]
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:578:appid not match  5b10f68a  5b04cecc  ]
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:701:res check failed! ret=  11210  ]
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:1062:init_check err:  11210  ]
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:57 329][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 461  lEngine_SendMessage() [out] 0
+[2018/06/05 12:41:57 329][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 310  lEngine_Stop(6803f220) [in]
+[2018/06/05 12:41:57 329][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:7:1:0
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 586  ENGINE_MSG_UNLOAD
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54010450,6803f220) [in]
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1208:SYS_MSG_UNLOAD  ]
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 545  lEngine_Exit(6803f220) [in]
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][DBG] LENGINE    leng_shell 549  [civw1PdHHBHc1Jn-5X6qaaw0luThHuFlYl] dying...
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:9:1:0
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 582  lEngine_Exit() [out] 0
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 623  [civw1PdHHBHc1Jn-5X6qaaw0luThHuFlYl] active, go bg!
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 651  ENGINE_MSG_STOP
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 671  [civw1PdHHBHc1Jn-5X6qaaw0luThHuFlYl] bg, unload directly!
+[2018/06/05 12:41:57 329][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 676  l_engine_5 occupancy: 0 (0%)
+[2018/06/05 12:41:57 329][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 369  lEngine_Stop() [out] 0
+[2018/06/05 12:41:57 329][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     827  QIVWSessionBegin() [out] 11210
+[2018/06/05 12:42:02 350][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     612  QIVWSessionBegin, DNN ivwVersion=1001.60.1421
+[2018/06/05 12:42:02 350][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     631  QIVWSessionBegin5(0,cfff6368,92ffbc7c) [in]
+[2018/06/05 12:42:02 350][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2806 MSPGetParam(ccc077ad, 92ffbac0, 92ffb8a8) [in]
+[2018/06/05 12:42:02 350][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2822 MSPGetParam() [out] -1
+[2018/06/05 12:42:02 350][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 109  lEngine_Start(ccc072a4,680405e0,1, 0) [in]
+[2018/06/05 12:42:02 350][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  327  load ivw_local
+[2018/06/05 12:42:02 350][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:02 350][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:02 350][Pxe48][Tx92ffc700][PRF] LLOADER    lloader.c  397  load ivw_local cost 0 (ms)
+[2018/06/05 12:42:02 351][Pxe48][Tx92ffc700][DBG] LENGINE    leng_shell 204  env=6803f2a0,ivw_local,civw1PdHHBHc1JnX5Tk+aaw0luThHuFlYl
+[2018/06/05 12:42:02 351][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:6:1:1
+[2018/06/05 12:42:02 351][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 275  lEngine_Start() [out] 0
+[2018/06/05 12:42:02 351][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 418  lEngine_SendMessage(6803f2a0,6,2,,,) [in]
+[2018/06/05 12:42:02 351][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 565  ENGINE_MSG_LOAD
+[2018/06/05 12:42:02 351][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 209  lEngine_LoadEnv(ccfa3b00,6803f2a0) [in]
+[2018/06/05 12:42:02 351][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ecode
+[2018/06/05 12:42:02 351][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:02 351][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:02 351][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ecode cost 0 (ms)
+[2018/06/05 12:42:02 351][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load auth
+[2018/06/05 12:42:02 351][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:02 351][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:02 351][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load auth cost 0 (ms)
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 106  luac_loadluacAuth enter
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 91   luac_openluacAuth enter
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 99   luac_openluacAuth leave
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 109  luac_loadluacAuth leave
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load config
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load config cost 0 (ms)
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [config:43:use general cloud  ]
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load update
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load update cost 0 (ms)
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load transport
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load transport cost 0 (ms)
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ns
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:02 352][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ns cost 0 (ms)
+[2018/06/05 12:42:02 353][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load network
+[2018/06/05 12:42:02 353][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:02 353][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:02 353][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load network cost 1 (ms)
+[2018/06/05 12:42:02 353][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 118  luac_auth_new enter
+[2018/06/05 12:42:02 353][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 126  luac_auth_new leave
+[2018/06/05 12:42:02 353][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 263  precall return 0
+[2018/06/05 12:42:02 353][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 288  [civw1PdHHBHc1JnX5Tk+aaw0luThHuFlYl], ACTIVE
+[2018/06/05 12:42:02 353][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54069fa0,6803f2a0) [in]
+[2018/06/05 12:42:02 353][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:11:1:0
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1287:os_type is:  Linux  ]
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1296:ivw loaded!  ]
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1298:1001.60.1421  ]
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 312  [civw1PdHHBHc1JnX5Tk+aaw0luThHuFlYl], loaded
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54069fa0,6803f2a0) [in]
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1231:SYS_MSG_REGCB  msp_status_cb  func(5403d3e0) ]
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 345  lEngine_LoadEnv() [out] successfully
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 571  civw1PdHHBHc1JnX5Tk+aaw0luThHuFlYl, eng = l_engine_5, env = 6803f2a0, L = 68025bc0
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 572  l_engine_5 occupancy: 1 (33%)
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 539  ENGINE_MSG_RPC_SYNC
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 547  [civw1PdHHBHc1JnX5Tk+aaw0luThHuFlYl], stat = 1
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(680147b0,6803f2a0) [in]
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1046:IVW_LOCAL_INIT_CHECK  ]
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1052:ivw_res_path:  fo|res/ivw/wakeupresource.jet  ]
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:681:lgi:  nil  nil  ]
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:685:fo|res/ivw/wakeupresource.jet  1  ]
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      118  Ivw_ResCheck() [in]
+[2018/06/05 12:42:02 375][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      125  Ivw_ResCheck(fo, res/ivw/wakeupresource.jet, 0, 0)
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      234  Ivw_ResCheck(0) [out]
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:476:err  0  ]
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:477:res_ver  3  ]
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:478:res_appid_md5    ]
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:479:res_id    ]
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:480:|%fsoniah%=|%fwwnc%=%2e73dbdd%+%ubtnc%=%d3ce733?e0ec5e34dea46a15be5f>33b%+%ubts~wb%=%c%z+%nqpphuc%=|%irj%=5+%phuct%=\|%nc%=7+%sbs%=%nfh4kfi5in5ofh4%+%soubtohkc%=6327z+|%nc%=6+%sbs%=%nfh4kfi5mn6vn3ubi5%+%soubtohkc%=6327zZz+%ubttn}b%=>>7737+%ubtsnjb%=6250?222>>+%ubtqbu%=%q1777%z  ]
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:488:speech_plus_setting  0  ]
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load dkjson
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load dkjson cost 0 (ms)
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load debug
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][ERR] LLOADER    lloader.c  390  not found!
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ni2hao3  0  1450  ]
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ji1qi4ren2  1  1450  ]
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:572:d  ]
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:578:appid not match  5b10f68a  5b04cecc  ]
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:701:res check failed! ret=  11210  ]
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:1062:init_check err:  11210  ]
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:02 376][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 461  lEngine_SendMessage() [out] 0
+[2018/06/05 12:42:02 376][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 310  lEngine_Stop(6803f2a0) [in]
+[2018/06/05 12:42:02 376][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:7:1:1
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 586  ENGINE_MSG_UNLOAD
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54010460,6803f2a0) [in]
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1208:SYS_MSG_UNLOAD  ]
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 545  lEngine_Exit(6803f2a0) [in]
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][DBG] LENGINE    leng_shell 549  [civw1PdHHBHc1JnX5Tk+aaw0luThHuFlYl] dying...
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:9:1:0
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 582  lEngine_Exit() [out] 0
+[2018/06/05 12:42:02 376][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:42:02 377][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:02 377][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 623  [civw1PdHHBHc1JnX5Tk+aaw0luThHuFlYl] active, go bg!
+[2018/06/05 12:42:02 377][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 651  ENGINE_MSG_STOP
+[2018/06/05 12:42:02 377][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 671  [civw1PdHHBHc1JnX5Tk+aaw0luThHuFlYl] bg, unload directly!
+[2018/06/05 12:42:02 377][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 676  l_engine_5 occupancy: 0 (0%)
+[2018/06/05 12:42:02 377][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 369  lEngine_Stop() [out] 0
+[2018/06/05 12:42:02 377][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     827  QIVWSessionBegin() [out] 11210
+[2018/06/05 12:42:07 409][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     612  QIVWSessionBegin, DNN ivwVersion=1001.60.1421
+[2018/06/05 12:42:07 409][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     631  QIVWSessionBegin5(0,cfff6368,92ffbc7c) [in]
+[2018/06/05 12:42:07 409][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2806 MSPGetParam(ccc077ad, 92ffbac0, 92ffb8a8) [in]
+[2018/06/05 12:42:07 409][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2822 MSPGetParam() [out] -1
+[2018/06/05 12:42:07 409][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 109  lEngine_Start(ccc072a4,6803f2a0,1, 0) [in]
+[2018/06/05 12:42:07 409][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  327  load ivw_local
+[2018/06/05 12:42:07 409][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:07 409][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:07 409][Pxe48][Tx92ffc700][PRF] LLOADER    lloader.c  397  load ivw_local cost 0 (ms)
+[2018/06/05 12:42:07 409][Pxe48][Tx92ffc700][DBG] LENGINE    leng_shell 204  env=680403d0,ivw_local,civw1PdHHBHc1JnZ5jjQaamso5VYlov5IG
+[2018/06/05 12:42:07 409][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:6:1:1
+[2018/06/05 12:42:07 409][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 275  lEngine_Start() [out] 0
+[2018/06/05 12:42:07 409][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 418  lEngine_SendMessage(680403d0,6,2,,,) [in]
+[2018/06/05 12:42:07 409][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 565  ENGINE_MSG_LOAD
+[2018/06/05 12:42:07 409][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 209  lEngine_LoadEnv(ccfa3b00,680403d0) [in]
+[2018/06/05 12:42:07 409][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:11:1:0
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ecode
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ecode cost 0 (ms)
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load auth
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load auth cost 0 (ms)
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 106  luac_loadluacAuth enter
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 91   luac_openluacAuth enter
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 99   luac_openluacAuth leave
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 109  luac_loadluacAuth leave
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load config
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load config cost 0 (ms)
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [config:43:use general cloud  ]
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load update
+[2018/06/05 12:42:07 410][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:07 411][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:07 411][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load update cost 0 (ms)
+[2018/06/05 12:42:07 411][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load transport
+[2018/06/05 12:42:07 411][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:07 411][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:07 411][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load transport cost 0 (ms)
+[2018/06/05 12:42:07 411][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ns
+[2018/06/05 12:42:07 411][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:07 411][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:07 411][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ns cost 0 (ms)
+[2018/06/05 12:42:07 411][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load network
+[2018/06/05 12:42:07 411][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:07 411][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:07 412][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load network cost 0 (ms)
+[2018/06/05 12:42:07 412][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 118  luac_auth_new enter
+[2018/06/05 12:42:07 412][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 126  luac_auth_new leave
+[2018/06/05 12:42:07 412][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 263  precall return 0
+[2018/06/05 12:42:07 412][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 288  [civw1PdHHBHc1JnZ5jjQaamso5VYlov5IG], ACTIVE
+[2018/06/05 12:42:07 412][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54069fc0,680403d0) [in]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1287:os_type is:  Linux  ]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1296:ivw loaded!  ]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1298:1001.60.1421  ]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 312  [civw1PdHHBHc1JnZ5jjQaamso5VYlov5IG], loaded
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54069fc0,680403d0) [in]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1231:SYS_MSG_REGCB  msp_status_cb  func(54034a60) ]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 345  lEngine_LoadEnv() [out] successfully
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 571  civw1PdHHBHc1JnZ5jjQaamso5VYlov5IG, eng = l_engine_5, env = 680403d0, L = 68025bc0
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 572  l_engine_5 occupancy: 1 (33%)
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 539  ENGINE_MSG_RPC_SYNC
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 547  [civw1PdHHBHc1JnZ5jjQaamso5VYlov5IG], stat = 1
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(680144e0,680403d0) [in]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1046:IVW_LOCAL_INIT_CHECK  ]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1052:ivw_res_path:  fo|res/ivw/wakeupresource.jet  ]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:681:lgi:  nil  nil  ]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:685:fo|res/ivw/wakeupresource.jet  1  ]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      118  Ivw_ResCheck() [in]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      125  Ivw_ResCheck(fo, res/ivw/wakeupresource.jet, 0, 0)
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      234  Ivw_ResCheck(0) [out]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:476:err  0  ]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:477:res_ver  3  ]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:478:res_appid_md5    ]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:479:res_id    ]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:480:|%fsoniah%=|%fwwnc%=%2e73dbdd%+%ubtnc%=%d3ce733?e0ec5e34dea46a15be5f>33b%+%ubts~wb%=%c%z+%nqpphuc%=|%irj%=5+%phuct%=\|%nc%=7+%sbs%=%nfh4kfi5in5ofh4%+%soubtohkc%=6327z+|%nc%=6+%sbs%=%nfh4kfi5mn6vn3ubi5%+%soubtohkc%=6327zZz+%ubttn}b%=>>7737+%ubtsnjb%=6250?222>>+%ubtqbu%=%q1777%z  ]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:488:speech_plus_setting  0  ]
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load dkjson
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load dkjson cost 0 (ms)
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load debug
+[2018/06/05 12:42:07 437][Pxe48][Tx897fa700][ERR] LLOADER    lloader.c  390  not found!
+[2018/06/05 12:42:07 438][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ni2hao3  0  1450  ]
+[2018/06/05 12:42:07 438][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ji1qi4ren2  1  1450  ]
+[2018/06/05 12:42:07 438][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:572:d  ]
+[2018/06/05 12:42:07 438][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:578:appid not match  5b10f68a  5b04cecc  ]
+[2018/06/05 12:42:07 438][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:701:res check failed! ret=  11210  ]
+[2018/06/05 12:42:07 438][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:1062:init_check err:  11210  ]
+[2018/06/05 12:42:07 438][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:07 438][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 461  lEngine_SendMessage() [out] 0
+[2018/06/05 12:42:07 438][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 310  lEngine_Stop(680403d0) [in]
+[2018/06/05 12:42:07 438][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:7:1:1
+[2018/06/05 12:42:07 439][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 586  ENGINE_MSG_UNLOAD
+[2018/06/05 12:42:07 439][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54010450,680403d0) [in]
+[2018/06/05 12:42:07 439][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1208:SYS_MSG_UNLOAD  ]
+[2018/06/05 12:42:07 439][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 545  lEngine_Exit(680403d0) [in]
+[2018/06/05 12:42:07 439][Pxe48][Tx897fa700][DBG] LENGINE    leng_shell 549  [civw1PdHHBHc1JnZ5jjQaamso5VYlov5IG] dying...
+[2018/06/05 12:42:07 439][Pxe48][Tx897fa700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:9:1:0
+[2018/06/05 12:42:07 439][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 582  lEngine_Exit() [out] 0
+[2018/06/05 12:42:07 439][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:42:07 439][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:07 439][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 623  [civw1PdHHBHc1JnZ5jjQaamso5VYlov5IG] active, go bg!
+[2018/06/05 12:42:07 439][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 651  ENGINE_MSG_STOP
+[2018/06/05 12:42:07 439][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 671  [civw1PdHHBHc1JnZ5jjQaamso5VYlov5IG] bg, unload directly!
+[2018/06/05 12:42:07 439][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 676  l_engine_5 occupancy: 0 (0%)
+[2018/06/05 12:42:07 439][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 369  lEngine_Stop() [out] 0
+[2018/06/05 12:42:07 439][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     827  QIVWSessionBegin() [out] 11210
+[2018/06/05 12:42:12 469][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     612  QIVWSessionBegin, DNN ivwVersion=1001.60.1421
+[2018/06/05 12:42:12 469][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     631  QIVWSessionBegin5(0,cfff6368,92ffbc7c) [in]
+[2018/06/05 12:42:12 469][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2806 MSPGetParam(ccc077ad, 92ffbac0, 92ffb8a8) [in]
+[2018/06/05 12:42:12 469][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2822 MSPGetParam() [out] -1
+[2018/06/05 12:42:12 469][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 109  lEngine_Start(ccc072a4,680403d0,1, 0) [in]
+[2018/06/05 12:42:12 469][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  327  load ivw_local
+[2018/06/05 12:42:12 469][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:12 469][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:12 469][Pxe48][Tx92ffc700][PRF] LLOADER    lloader.c  397  load ivw_local cost 0 (ms)
+[2018/06/05 12:42:12 470][Pxe48][Tx92ffc700][DBG] LENGINE    leng_shell 204  env=680252b0,ivw_local,civw1PdHHBHc1Jnv5x+faaWtfa7z5P6W1x
+[2018/06/05 12:42:12 470][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:6:1:1
+[2018/06/05 12:42:12 470][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 275  lEngine_Start() [out] 0
+[2018/06/05 12:42:12 470][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 418  lEngine_SendMessage(680252b0,6,2,,,) [in]
+[2018/06/05 12:42:12 470][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:11:1:0
+[2018/06/05 12:42:12 470][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 565  ENGINE_MSG_LOAD
+[2018/06/05 12:42:12 470][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 209  lEngine_LoadEnv(ccfa3b00,680252b0) [in]
+[2018/06/05 12:42:12 470][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ecode
+[2018/06/05 12:42:12 470][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:12 470][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:12 470][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ecode cost 0 (ms)
+[2018/06/05 12:42:12 470][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load auth
+[2018/06/05 12:42:12 470][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:12 470][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:12 470][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load auth cost 0 (ms)
+[2018/06/05 12:42:12 471][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 106  luac_loadluacAuth enter
+[2018/06/05 12:42:12 471][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 91   luac_openluacAuth enter
+[2018/06/05 12:42:12 471][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 99   luac_openluacAuth leave
+[2018/06/05 12:42:12 471][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 109  luac_loadluacAuth leave
+[2018/06/05 12:42:12 471][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load config
+[2018/06/05 12:42:12 471][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:12 471][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:12 471][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load config cost 0 (ms)
+[2018/06/05 12:42:12 471][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [config:43:use general cloud  ]
+[2018/06/05 12:42:12 471][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load update
+[2018/06/05 12:42:12 471][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:12 471][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:12 471][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load update cost 0 (ms)
+[2018/06/05 12:42:12 471][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load transport
+[2018/06/05 12:42:12 471][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:12 471][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:12 471][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load transport cost 0 (ms)
+[2018/06/05 12:42:12 472][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ns
+[2018/06/05 12:42:12 472][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:12 472][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:12 472][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ns cost 0 (ms)
+[2018/06/05 12:42:12 472][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load network
+[2018/06/05 12:42:12 472][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:12 472][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:12 472][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load network cost 0 (ms)
+[2018/06/05 12:42:12 472][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 118  luac_auth_new enter
+[2018/06/05 12:42:12 472][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 126  luac_auth_new leave
+[2018/06/05 12:42:12 472][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 263  precall return 0
+[2018/06/05 12:42:12 472][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 288  [civw1PdHHBHc1Jnv5x+faaWtfa7z5P6W1x], ACTIVE
+[2018/06/05 12:42:12 472][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54069fa0,680252b0) [in]
+[2018/06/05 12:42:12 472][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1287:os_type is:  Linux  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1296:ivw loaded!  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1298:1001.60.1421  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 312  [civw1PdHHBHc1Jnv5x+faaWtfa7z5P6W1x], loaded
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54069fa0,680252b0) [in]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1231:SYS_MSG_REGCB  msp_status_cb  func(540509e0) ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 345  lEngine_LoadEnv() [out] successfully
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 571  civw1PdHHBHc1Jnv5x+faaWtfa7z5P6W1x, eng = l_engine_5, env = 680252b0, L = 68025bc0
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 572  l_engine_5 occupancy: 1 (33%)
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 539  ENGINE_MSG_RPC_SYNC
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 547  [civw1PdHHBHc1Jnv5x+faaWtfa7z5P6W1x], stat = 1
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(68040010,680252b0) [in]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1046:IVW_LOCAL_INIT_CHECK  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1052:ivw_res_path:  fo|res/ivw/wakeupresource.jet  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:681:lgi:  nil  nil  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:685:fo|res/ivw/wakeupresource.jet  1  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      118  Ivw_ResCheck() [in]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      125  Ivw_ResCheck(fo, res/ivw/wakeupresource.jet, 0, 0)
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      234  Ivw_ResCheck(0) [out]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:476:err  0  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:477:res_ver  3  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:478:res_appid_md5    ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:479:res_id    ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:480:|%fsoniah%=|%fwwnc%=%2e73dbdd%+%ubtnc%=%d3ce733?e0ec5e34dea46a15be5f>33b%+%ubts~wb%=%c%z+%nqpphuc%=|%irj%=5+%phuct%=\|%nc%=7+%sbs%=%nfh4kfi5in5ofh4%+%soubtohkc%=6327z+|%nc%=6+%sbs%=%nfh4kfi5mn6vn3ubi5%+%soubtohkc%=6327zZz+%ubttn}b%=>>7737+%ubtsnjb%=6250?222>>+%ubtqbu%=%q1777%z  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:488:speech_plus_setting  0  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load dkjson
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load dkjson cost 0 (ms)
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load debug
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][ERR] LLOADER    lloader.c  390  not found!
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ni2hao3  0  1450  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ji1qi4ren2  1  1450  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:572:d  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:578:appid not match  5b10f68a  5b04cecc  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:701:res check failed! ret=  11210  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:1062:init_check err:  11210  ]
+[2018/06/05 12:42:12 473][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:12 474][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 461  lEngine_SendMessage() [out] 0
+[2018/06/05 12:42:12 494][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 310  lEngine_Stop(680252b0) [in]
+[2018/06/05 12:42:12 494][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:7:1:1
+[2018/06/05 12:42:12 494][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 586  ENGINE_MSG_UNLOAD
+[2018/06/05 12:42:12 494][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54010460,680252b0) [in]
+[2018/06/05 12:42:12 494][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1208:SYS_MSG_UNLOAD  ]
+[2018/06/05 12:42:12 494][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 545  lEngine_Exit(680252b0) [in]
+[2018/06/05 12:42:12 495][Pxe48][Tx897fa700][DBG] LENGINE    leng_shell 549  [civw1PdHHBHc1Jnv5x+faaWtfa7z5P6W1x] dying...
+[2018/06/05 12:42:12 495][Pxe48][Tx897fa700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:9:1:0
+[2018/06/05 12:42:12 495][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 582  lEngine_Exit() [out] 0
+[2018/06/05 12:42:12 495][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:42:12 495][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:12 495][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 623  [civw1PdHHBHc1Jnv5x+faaWtfa7z5P6W1x] active, go bg!
+[2018/06/05 12:42:12 495][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 651  ENGINE_MSG_STOP
+[2018/06/05 12:42:12 495][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 671  [civw1PdHHBHc1Jnv5x+faaWtfa7z5P6W1x] bg, unload directly!
+[2018/06/05 12:42:12 495][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 676  l_engine_5 occupancy: 0 (0%)
+[2018/06/05 12:42:12 495][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 369  lEngine_Stop() [out] 0
+[2018/06/05 12:42:12 495][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     827  QIVWSessionBegin() [out] 11210
+[2018/06/05 12:42:17 521][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     612  QIVWSessionBegin, DNN ivwVersion=1001.60.1421
+[2018/06/05 12:42:17 521][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     631  QIVWSessionBegin5(0,cfff6368,92ffbc7c) [in]
+[2018/06/05 12:42:17 521][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2806 MSPGetParam(ccc077ad, 92ffbac0, 92ffb8a8) [in]
+[2018/06/05 12:42:17 521][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2822 MSPGetParam() [out] -1
+[2018/06/05 12:42:17 521][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 109  lEngine_Start(ccc072a4,68040010,1, 0) [in]
+[2018/06/05 12:42:17 521][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  327  load ivw_local
+[2018/06/05 12:42:17 521][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:17 521][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:17 521][Pxe48][Tx92ffc700][PRF] LLOADER    lloader.c  397  load ivw_local cost 1 (ms)
+[2018/06/05 12:42:17 521][Pxe48][Tx92ffc700][DBG] LENGINE    leng_shell 204  env=680401a0,ivw_local,civw1PdHHBHc1JnK5ZSDaa5Dbakxdqvkva
+[2018/06/05 12:42:17 521][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:6:1:1
+[2018/06/05 12:42:17 521][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 275  lEngine_Start() [out] 0
+[2018/06/05 12:42:17 521][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 418  lEngine_SendMessage(680401a0,6,2,,,) [in]
+[2018/06/05 12:42:17 521][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 565  ENGINE_MSG_LOAD
+[2018/06/05 12:42:17 546][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 209  lEngine_LoadEnv(ccfa3b00,680401a0) [in]
+[2018/06/05 12:42:17 546][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ecode
+[2018/06/05 12:42:17 546][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:17 546][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:17 546][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ecode cost 0 (ms)
+[2018/06/05 12:42:17 546][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load auth
+[2018/06/05 12:42:17 546][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:17 546][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:17 546][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load auth cost 0 (ms)
+[2018/06/05 12:42:17 546][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 106  luac_loadluacAuth enter
+[2018/06/05 12:42:17 546][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 91   luac_openluacAuth enter
+[2018/06/05 12:42:17 546][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 99   luac_openluacAuth leave
+[2018/06/05 12:42:17 547][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 109  luac_loadluacAuth leave
+[2018/06/05 12:42:17 547][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load config
+[2018/06/05 12:42:17 547][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:17 547][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:17 547][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load config cost 0 (ms)
+[2018/06/05 12:42:17 547][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [config:43:use general cloud  ]
+[2018/06/05 12:42:17 547][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load update
+[2018/06/05 12:42:17 547][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:17 547][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:17 547][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load update cost 0 (ms)
+[2018/06/05 12:42:17 547][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load transport
+[2018/06/05 12:42:17 547][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:17 547][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:17 547][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load transport cost 1 (ms)
+[2018/06/05 12:42:17 547][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ns
+[2018/06/05 12:42:17 547][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:17 547][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:17 547][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ns cost 0 (ms)
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load network
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load network cost 0 (ms)
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 118  luac_auth_new enter
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 126  luac_auth_new leave
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 263  precall return 0
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 288  [civw1PdHHBHc1JnK5ZSDaa5Dbakxdqvkva], ACTIVE
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54069fc0,680401a0) [in]
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1287:os_type is:  Linux  ]
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1296:ivw loaded!  ]
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1298:1001.60.1421  ]
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 312  [civw1PdHHBHc1JnK5ZSDaa5Dbakxdqvkva], loaded
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54069fc0,680401a0) [in]
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1231:SYS_MSG_REGCB  msp_status_cb  func(540395e0) ]
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 345  lEngine_LoadEnv() [out] successfully
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 571  civw1PdHHBHc1JnK5ZSDaa5Dbakxdqvkva, eng = l_engine_5, env = 680401a0, L = 68025bc0
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 572  l_engine_5 occupancy: 1 (33%)
+[2018/06/05 12:42:17 548][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:11:1:0
+[2018/06/05 12:42:17 548][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 539  ENGINE_MSG_RPC_SYNC
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 547  [civw1PdHHBHc1JnK5ZSDaa5Dbakxdqvkva], stat = 1
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(68014740,680401a0) [in]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1046:IVW_LOCAL_INIT_CHECK  ]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1052:ivw_res_path:  fo|res/ivw/wakeupresource.jet  ]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:681:lgi:  nil  nil  ]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:685:fo|res/ivw/wakeupresource.jet  1  ]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      118  Ivw_ResCheck() [in]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      125  Ivw_ResCheck(fo, res/ivw/wakeupresource.jet, 0, 0)
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      234  Ivw_ResCheck(0) [out]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:476:err  0  ]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:477:res_ver  3  ]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:478:res_appid_md5    ]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:479:res_id    ]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:480:|%fsoniah%=|%fwwnc%=%2e73dbdd%+%ubtnc%=%d3ce733?e0ec5e34dea46a15be5f>33b%+%ubts~wb%=%c%z+%nqpphuc%=|%irj%=5+%phuct%=\|%nc%=7+%sbs%=%nfh4kfi5in5ofh4%+%soubtohkc%=6327z+|%nc%=6+%sbs%=%nfh4kfi5mn6vn3ubi5%+%soubtohkc%=6327zZz+%ubttn}b%=>>7737+%ubtsnjb%=6250?222>>+%ubtqbu%=%q1777%z  ]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:488:speech_plus_setting  0  ]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load dkjson
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load dkjson cost 0 (ms)
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load debug
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][ERR] LLOADER    lloader.c  390  not found!
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ni2hao3  0  1450  ]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ji1qi4ren2  1  1450  ]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:572:d  ]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:578:appid not match  5b10f68a  5b04cecc  ]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:701:res check failed! ret=  11210  ]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:1062:init_check err:  11210  ]
+[2018/06/05 12:42:17 549][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:17 550][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 461  lEngine_SendMessage() [out] 0
+[2018/06/05 12:42:17 550][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 310  lEngine_Stop(680401a0) [in]
+[2018/06/05 12:42:17 550][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:7:1:1
+[2018/06/05 12:42:17 550][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 586  ENGINE_MSG_UNLOAD
+[2018/06/05 12:42:17 550][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54010450,680401a0) [in]
+[2018/06/05 12:42:17 550][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1208:SYS_MSG_UNLOAD  ]
+[2018/06/05 12:42:17 550][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 545  lEngine_Exit(680401a0) [in]
+[2018/06/05 12:42:17 550][Pxe48][Tx897fa700][DBG] LENGINE    leng_shell 549  [civw1PdHHBHc1JnK5ZSDaa5Dbakxdqvkva] dying...
+[2018/06/05 12:42:17 550][Pxe48][Tx897fa700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:9:1:0
+[2018/06/05 12:42:17 550][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 582  lEngine_Exit() [out] 0
+[2018/06/05 12:42:17 550][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:42:17 550][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:17 550][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 623  [civw1PdHHBHc1JnK5ZSDaa5Dbakxdqvkva] active, go bg!
+[2018/06/05 12:42:17 550][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 651  ENGINE_MSG_STOP
+[2018/06/05 12:42:17 550][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 671  [civw1PdHHBHc1JnK5ZSDaa5Dbakxdqvkva] bg, unload directly!
+[2018/06/05 12:42:17 550][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 676  l_engine_5 occupancy: 0 (0%)
+[2018/06/05 12:42:17 550][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 369  lEngine_Stop() [out] 0
+[2018/06/05 12:42:17 550][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     827  QIVWSessionBegin() [out] 11210
+[2018/06/05 12:42:22 598][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     612  QIVWSessionBegin, DNN ivwVersion=1001.60.1421
+[2018/06/05 12:42:22 598][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     631  QIVWSessionBegin5(0,cfff6368,92ffbc7c) [in]
+[2018/06/05 12:42:22 598][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2806 MSPGetParam(ccc077ad, 92ffbac0, 92ffb8a8) [in]
+[2018/06/05 12:42:22 598][Pxe48][Tx92ffc700][TRC] MSPCMN     msp_cmn.c  2822 MSPGetParam() [out] -1
+[2018/06/05 12:42:22 598][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 109  lEngine_Start(ccc072a4,68040010,1, 0) [in]
+[2018/06/05 12:42:22 598][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  327  load ivw_local
+[2018/06/05 12:42:22 598][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:22 598][Pxe48][Tx92ffc700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:22 598][Pxe48][Tx92ffc700][PRF] LLOADER    lloader.c  397  load ivw_local cost 0 (ms)
+[2018/06/05 12:42:22 599][Pxe48][Tx92ffc700][DBG] LENGINE    leng_shell 204  env=680252f0,ivw_local,civw1PdHHBHc1JnD5JCdaa5Dbakxdqvkva
+[2018/06/05 12:42:22 599][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:6:1:1
+[2018/06/05 12:42:22 599][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 275  lEngine_Start() [out] 0
+[2018/06/05 12:42:22 599][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 418  lEngine_SendMessage(680252f0,6,2,,,) [in]
+[2018/06/05 12:42:22 599][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 565  ENGINE_MSG_LOAD
+[2018/06/05 12:42:22 599][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 209  lEngine_LoadEnv(ccfa3b00,680252f0) [in]
+[2018/06/05 12:42:22 599][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ecode
+[2018/06/05 12:42:22 599][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:22 599][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:22 599][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ecode cost 0 (ms)
+[2018/06/05 12:42:22 599][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load auth
+[2018/06/05 12:42:22 599][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:22 599][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:22 599][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load auth cost 0 (ms)
+[2018/06/05 12:42:22 600][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 106  luac_loadluacAuth enter
+[2018/06/05 12:42:22 600][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 91   luac_openluacAuth enter
+[2018/06/05 12:42:22 600][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 99   luac_openluacAuth leave
+[2018/06/05 12:42:22 600][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 109  luac_loadluacAuth leave
+[2018/06/05 12:42:22 600][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load config
+[2018/06/05 12:42:22 600][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:22 600][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:22 600][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load config cost 0 (ms)
+[2018/06/05 12:42:22 600][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [config:43:use general cloud  ]
+[2018/06/05 12:42:22 600][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load update
+[2018/06/05 12:42:22 600][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:22 600][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:22 600][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load update cost 0 (ms)
+[2018/06/05 12:42:22 600][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load transport
+[2018/06/05 12:42:22 600][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:22 600][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:22 600][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load transport cost 0 (ms)
+[2018/06/05 12:42:22 601][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load ns
+[2018/06/05 12:42:22 601][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:22 601][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:22 601][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load ns cost 0 (ms)
+[2018/06/05 12:42:22 601][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load network
+[2018/06/05 12:42:22 601][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:22 601][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:22 601][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load network cost 0 (ms)
+[2018/06/05 12:42:22 601][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 118  luac_auth_new enter
+[2018/06/05 12:42:22 601][Pxe48][Tx897fa700][TRC] LENGINE    luac_auth. 126  luac_auth_new leave
+[2018/06/05 12:42:22 601][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 263  precall return 0
+[2018/06/05 12:42:22 601][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 288  [civw1PdHHBHc1JnD5JCdaa5Dbakxdqvkva], ACTIVE
+[2018/06/05 12:42:22 601][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54069fc0,680252f0) [in]
+[2018/06/05 12:42:22 601][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1287:os_type is:  Linux  ]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1296:ivw loaded!  ]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1298:1001.60.1421  ]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 312  [civw1PdHHBHc1JnD5JCdaa5Dbakxdqvkva], loaded
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54069fc0,680252f0) [in]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1231:SYS_MSG_REGCB  msp_status_cb  func(5403d420) ]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 345  lEngine_LoadEnv() [out] successfully
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 571  civw1PdHHBHc1JnD5JCdaa5Dbakxdqvkva, eng = l_engine_5, env = 680252f0, L = 68025bc0
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 572  l_engine_5 occupancy: 1 (33%)
+[2018/06/05 12:42:22 602][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:11:1:0
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 539  ENGINE_MSG_RPC_SYNC
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 547  [civw1PdHHBHc1JnD5JCdaa5Dbakxdqvkva], stat = 1
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(680147d0,680252f0) [in]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1046:IVW_LOCAL_INIT_CHECK  ]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1052:ivw_res_path:  fo|res/ivw/wakeupresource.jet  ]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:681:lgi:  nil  nil  ]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:685:fo|res/ivw/wakeupresource.jet  1  ]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      118  Ivw_ResCheck() [in]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      125  Ivw_ResCheck(fo, res/ivw/wakeupresource.jet, 0, 0)
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][TRC] LENGINE    ivw.c      234  Ivw_ResCheck(0) [out]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:476:err  0  ]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:477:res_ver  3  ]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:478:res_appid_md5    ]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:479:res_id    ]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:480:|%fsoniah%=|%fwwnc%=%2e73dbdd%+%ubtnc%=%d3ce733?e0ec5e34dea46a15be5f>33b%+%ubts~wb%=%c%z+%nqpphuc%=|%irj%=5+%phuct%=\|%nc%=7+%sbs%=%nfh4kfi5in5ofh4%+%soubtohkc%=6327z+|%nc%=6+%sbs%=%nfh4kfi5mn6vn3ubi5%+%soubtohkc%=6327zZz+%ubttn}b%=>>7737+%ubtsnjb%=6250?222>>+%ubtqbu%=%q1777%z  ]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:488:speech_plus_setting  0  ]
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load dkjson
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  339  a intalled entry
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  365  from rom
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][PRF] LLOADER    lloader.c  397  load dkjson cost 0 (ms)
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][INF] LLOADER    lloader.c  327  load debug
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][ERR] LLOADER    lloader.c  390  not found!
+[2018/06/05 12:42:22 602][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ni2hao3  0  1450  ]
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:540:xiao3lan2ji1qi4ren2  1  1450  ]
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:572:d  ]
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:578:appid not match  5b10f68a  5b04cecc  ]
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:701:res check failed! ret=  11210  ]
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][ERR] LMOD       luac_logge 166  [ivw_local:1062:init_check err:  11210  ]
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:22 603][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 461  lEngine_SendMessage() [out] 0
+[2018/06/05 12:42:22 603][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 310  lEngine_Stop(680252f0) [in]
+[2018/06/05 12:42:22 603][Pxe48][Tx92ffc700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:7:1:1
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 586  ENGINE_MSG_UNLOAD
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 416  luacRPCFuncProto_Invoke(54010450,680252f0) [in]
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][TRC] LMOD       luac_logge 170  [ivw_local:1208:SYS_MSG_UNLOAD  ]
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 545  lEngine_Exit(680252f0) [in]
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][DBG] LENGINE    leng_shell 549  [civw1PdHHBHc1JnD5JCdaa5Dbakxdqvkva] dying...
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][DBG] MSPTHREAD  MSPThreadP 733  POST l_engine_5:9:1:0
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][TRC] LENGINE    leng_shell 582  lEngine_Exit() [out] 0
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][INF] LMOD       luac_logge 172  [ivw_local:1321:last gc at  1528173692  ]
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][DBG] LENGINE    leng_rpc.c 533  luacRPCFuncProto_Invoke() [out] ret = 0
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 623  [civw1PdHHBHc1JnD5JCdaa5Dbakxdqvkva] active, go bg!
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 651  ENGINE_MSG_STOP
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][DBG] LENGINE    leng_main. 671  [civw1PdHHBHc1JnD5JCdaa5Dbakxdqvkva] bg, unload directly!
+[2018/06/05 12:42:22 603][Pxe48][Tx897fa700][INF] LENGINE    leng_main. 676  l_engine_5 occupancy: 0 (0%)
+[2018/06/05 12:42:22 603][Pxe48][Tx92ffc700][TRC] LENGINE    leng_shell 369  lEngine_Stop() [out] 0
+[2018/06/05 12:42:22 603][Pxe48][Tx92ffc700][TRC] QIVW       qivw.c     827  QIVWSessionBegin() [out] 11210

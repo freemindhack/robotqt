@@ -20,5 +20,9 @@
         <file>img/takefailed.png</file>
         <file>img/regcapturebtn.png</file>
         <file>img/shoplist.png</file>
+        <file>img/back_grey.png</file>
+        <file>img/scan1.png</file>
+        <file>img/scan2.png</file>
+        <file>img/scan3.png</file>
     </qresource>
 </RCC>
