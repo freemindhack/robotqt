@@ -1,4 +1,4 @@
-#ifndef C_UDP_H
+﻿#ifndef C_UDP_H
 #define C_UDP_H
 #include <QThread>
 #include <QtCore>
@@ -30,6 +30,7 @@ private:
     QUdpSocket *receiver;
     QUdpSocket *sender;
     QFile f();
+    QString talk="你好！我是小兰，来看看我这里有没有你需要的商品吧";
 
 };
 

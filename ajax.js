@@ -1,4 +1,4 @@
-function createXMLHttpRequest() {
+﻿function createXMLHttpRequest() {
     var req = null;
 
     try {
@@ -38,6 +38,7 @@ function ajax(){
     url:arguments[0].url || "", 
     async:arguments[0].async || "true", 
     data:arguments[0].data || null, 
+    timeout : 30000,
     dataType:arguments[0].dataType || "text", 
     contentType:arguments[0].contentType || "application/x-www-form-urlencoded", 
     beforeSend:arguments[0].beforeSend || function(){}, 
@@ -55,7 +56,8 @@ function ajax(){
       if(xhr.status === 200){
         ajaxData.success(xhr.response)
       }else{ 
-        ajaxData.error() 
+        console.log(xhr.response)
+        ajaxData.error()
       }  
     } 
   }  

@@ -1,4 +1,4 @@
-extern "C"
+﻿extern "C"
 #include "dianutils.h"
 #include "palservice.h"
 #include "runnable.h"
@@ -24,7 +24,7 @@ extern "C"
 #include <inc/tts.h>
 #include <QDateTime>
 #include <inc/awaken.h>
-
+#include <inc/aisound.h>
 extern int start_tts(tts_session_params *param, char *text, char *filename);
 
 
@@ -41,10 +41,11 @@ int main(int argc, char *argv[])
     QString str = QString::number(0xE0);
     qDebug() << str;
 //jiejue乱码问题
-    QTextCodec *codec = QTextCodec::codecForName("UTF-8");//情况2
-    QTextCodec::setCodecForLocale(codec);
+//    QTextCodec *codec = QTextCodec::codecForName("UTF-8");//情况2
+ //   QTextCodec::setCodecForLocale(codec);
 
-
+//login
+    login_aisound();
     //开启后台线程请求网络数据
     QThread threadWork;
     //开启刷手后台线程
@@ -71,7 +72,7 @@ int main(int argc, char *argv[])
     C_UDP udpthread;
     udpthread.start();
 
-    QTimer::singleShot(0,&voiceAsr,SLOT(initASR()));
+
 
     //展示二维码图片
 //    QTimer::singleShot(0,&work,SLOT(getQRCode()));
@@ -79,27 +80,20 @@ int main(int argc, char *argv[])
 
     QTimer *palTimer = new QTimer();
     QObject::connect(palTimer,SIGNAL(timeout()), &palService, SLOT(changeValueByCode()),Qt::QueuedConnection);
-    palTimer->start(1000);
+    palTimer->start(2000);
 
-    GLOBAL_USER_ID="201709999";
+    GLOBAL_USER_ID="2088712800736204";
 
 
     QTimer *voiceTimer = new QTimer();
-    QObject::connect(voiceTimer,SIGNAL(timeout()), &voice, SLOT(initScan()),Qt::QueuedConnection);
-    voiceTimer->start(2000);
+    QObject::connect(voiceTimer,SIGNAL(timeout()), &voice, SLOT(initScan()),Qt::DirectConnection);
+    voiceTimer->start(3000);
 
-//    QTimer::singleShot(0,&palService,SLOT(init()));
+     QTimer::singleShot(0,&voiceAsr,SLOT(initASR()));
 
-//    Runnable *r = new Runnable();
-//    QThreadPool::globalInstance()->start(r);
-//    QThreadPool::globalInstance()->waitForDone();
 
-//    QThread* backgroundThread = new QThread;
-//    backgroundThread->start();
-//    task->moveToThread(backgroundThread);
 
     //主信号
-//    QObject::connect(&work,SIGNAL(signa()),&app,SLOT(quit()));
 
     qmlRegisterType<WorkThread>("blue.deep.work",1,0,"WorkThread");
     qmlRegisterType<PalService>("blue.deep.palm",1,0,"PalService");
@@ -119,7 +113,8 @@ int main(int argc, char *argv[])
       QMetaObject::invokeMethod(root, "workFunction", Q_RETURN_ARG(QVariant, returnedValueWork), Q_ARG(QVariant, message));
 
 
-
+//logout
+//      logout_aisound();
     return app.exec();
 }
 

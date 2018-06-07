@@ -15,7 +15,7 @@ CXX           = g++
 DEFINES       = -DQT_DEPRECATED_WARNINGS -DQT_NO_DEBUG -DQT_QUICK_LIB -DQT_MULTIMEDIA_LIB -DQT_GUI_LIB -DQT_QML_LIB -DQT_NETWORK_LIB -DQT_XML_LIB -DQT_SCRIPT_LIB -DQT_CORE_LIB
 CFLAGS        = -pipe -O2 -Wall -W -D_REENTRANT -fPIC $(DEFINES)
 CXXFLAGS      = -pipe -O2 -std=gnu++11 -Wall -W -D_REENTRANT -fPIC $(DEFINES)
-INCPATH       = -I. -I../sensord/pvs -I../sensord/pvs/pvslib -I../sensord/pvs/pvslib -I../sensord/pvs/pvslib -I../sensord/pvs/pvslib -I../sensord/pvs/pvslib -I../sensord/pvs/pvslib -I../SimpleAmqpClient/simpleamqpclient-build -I. -I. -I. -I. -I. -I../Qt5.10.0/5.10.0/gcc_64/include -I../Qt5.10.0/5.10.0/gcc_64/include/QtQuick -I../Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia -I../Qt5.10.0/5.10.0/gcc_64/include/QtGui -I../Qt5.10.0/5.10.0/gcc_64/include/QtQml -I../Qt5.10.0/5.10.0/gcc_64/include/QtNetwork -I../Qt5.10.0/5.10.0/gcc_64/include/QtXml -I../Qt5.10.0/5.10.0/gcc_64/include/QtScript -I../Qt5.10.0/5.10.0/gcc_64/include/QtCore -I. -isystem /usr/include/libdrm -I../Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++
+INCPATH       = -I. -I. -I../lib/qt-arm-lib -I../lib/qt-arm-lib -I../lib/qt-arm-lib -I../lib/qt-arm-lib -I../lib/qt-arm-lib -I../lib/qt-arm-lib -I../lib/qt-arm-lib -I../lib/qt-arm-lib -I../lib/qt-arm-lib -I../lib/qt-arm-lib -I../lib/qt-arm-lib -I../lib/qt-arm-lib -I../Qt5.10.0/5.10.0/gcc_64/include -I../Qt5.10.0/5.10.0/gcc_64/include/QtQuick -I../Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia -I../Qt5.10.0/5.10.0/gcc_64/include/QtGui -I../Qt5.10.0/5.10.0/gcc_64/include/QtQml -I../Qt5.10.0/5.10.0/gcc_64/include/QtNetwork -I../Qt5.10.0/5.10.0/gcc_64/include/QtXml -I../Qt5.10.0/5.10.0/gcc_64/include/QtScript -I../Qt5.10.0/5.10.0/gcc_64/include/QtCore -I. -isystem /usr/include/libdrm -I../Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++
 QMAKE         = /home/robot/robotblue/qmake
 DEL_FILE      = rm -f
 CHK_DIR_EXISTS= test -d
@@ -38,7 +38,7 @@ DISTNAME      = robotblue1.0.0
 DISTDIR = /home/robot/robotblue/.tmp/robotblue1.0.0
 LINK          = g++
 LFLAGS        = -Wl,-O1 -Wl,-rpath,/home/robot/Qt5.10.0/5.10.0/gcc_64/lib
-LIBS          = $(SUBLIBS) -L/home/robot/robotblue/../sensord/pvs/ -lpvs_hal -L/home/robot/robotblue/../sensord/pvs/pvslib/ -lf3bc4bio -lf3bc4bsp -lf3bc4cap -lf3bc4com -lf3bc4mat -lpvsapiif -L/home/robot/robotblue/../SimpleAmqpClient/simpleamqpclient-build/ -lSimpleAmqpClient -L/home/robot/robotblue/lib/ -ltts -lmsc -laisound -lawaken -L/home/robot/Qt5.10.0/5.10.0/gcc_64/lib -lQt5Quick -lQt5Multimedia -lQt5Gui -lQt5Qml -lQt5Network -lQt5Xml -lQt5Script -lQt5Core -lGL -lpthread 
+LIBS          = $(SUBLIBS) -L/home/robot/robotblue/../lib/qt-arm-lib/ -laisound -laiui -lawaken -lf3bc4bio -lf3bc4bsp -lf3bc4cap -lf3bc4com -lf3bc4mat -lmsc -lpvsapiif -lpvs_hal -ltts -L/home/robot/Qt5.10.0/5.10.0/gcc_64/lib -lQt5Quick -lQt5Multimedia -lQt5Gui -lQt5Qml -lQt5Network -lQt5Xml -lQt5Script -lQt5Core -lGL -lpthread 
 AR            = ar cqs
 RANLIB        = 
 SED           = sed
@@ -252,6 +252,7 @@ DIST          = dataloader.js \
 		../Qt5.10.0/5.10.0/gcc_64/mkspecs/features/qt_config.prf \
 		../Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../Qt5.10.0/5.10.0/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../Qt5.10.0/5.10.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../Qt5.10.0/5.10.0/gcc_64/mkspecs/features/toolchain.prf \
 		../Qt5.10.0/5.10.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -284,24 +285,6 @@ DIST          = dataloader.js \
 		commoncontants.h \
 		qscriptjson.h \
 		AHeaders.h \
-		SimpleAmqpClient.h \
-		SimpleAmqpClient/AmqpException.h \
-		SimpleAmqpClient/AmqpLibraryException.h \
-		SimpleAmqpClient/AmqpResponseLibraryException.h \
-		SimpleAmqpClient/BadUriException.h \
-		SimpleAmqpClient/BasicMessage.h \
-		SimpleAmqpClient/Channel.h \
-		SimpleAmqpClient/ChannelImpl.h \
-		SimpleAmqpClient/ConnectionClosedException.h \
-		SimpleAmqpClient/ConsumerCancelledException.h \
-		SimpleAmqpClient/ConsumerTagNotFoundException.h \
-		SimpleAmqpClient/Envelope.h \
-		SimpleAmqpClient/MessageReturnedException.h \
-		SimpleAmqpClient/SimpleAmqpClient.h \
-		SimpleAmqpClient/Table.h \
-		SimpleAmqpClient/TableImpl.h \
-		SimpleAmqpClient/Util.h \
-		SimpleAmqpClient/Version.h \
 		c_udp.h \
 		Xml.h \
 		inc/formats.h \
@@ -316,7 +299,8 @@ DIST          = dataloader.js \
 		inc/speech_recognizer.h \
 		inc/tts.h \
 		voicethread.h \
-		inc/awaken.h main.cpp \
+		inc/awaken.h \
+		inc/aisound.h main.cpp \
 		httprequest.cpp \
 		runnable.cpp \
 		workthread.cpp \
@@ -501,6 +485,7 @@ Makefile: robotblue.pro ../Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++/qmake.conf .
 		../Qt5.10.0/5.10.0/gcc_64/mkspecs/features/qt_config.prf \
 		../Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++/qmake.conf \
 		../Qt5.10.0/5.10.0/gcc_64/mkspecs/features/spec_post.prf \
+		.qmake.stash \
 		../Qt5.10.0/5.10.0/gcc_64/mkspecs/features/exclusive_builds.prf \
 		../Qt5.10.0/5.10.0/gcc_64/mkspecs/features/toolchain.prf \
 		../Qt5.10.0/5.10.0/gcc_64/mkspecs/features/default_pre.prf \
@@ -693,6 +678,7 @@ Makefile: robotblue.pro ../Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++/qmake.conf .
 ../Qt5.10.0/5.10.0/gcc_64/mkspecs/features/qt_config.prf:
 ../Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++/qmake.conf:
 ../Qt5.10.0/5.10.0/gcc_64/mkspecs/features/spec_post.prf:
+.qmake.stash:
 ../Qt5.10.0/5.10.0/gcc_64/mkspecs/features/exclusive_builds.prf:
 ../Qt5.10.0/5.10.0/gcc_64/mkspecs/features/toolchain.prf:
 ../Qt5.10.0/5.10.0/gcc_64/mkspecs/features/default_pre.prf:
@@ -737,7 +723,7 @@ distdir: FORCE
 	$(COPY_FILE) --parents $(DIST) $(DISTDIR)/
 	$(COPY_FILE) --parents qml.qrc qmake_qmake_immediate.qrc $(DISTDIR)/
 	$(COPY_FILE) --parents ../Qt5.10.0/5.10.0/gcc_64/mkspecs/features/data/dummy.cpp $(DISTDIR)/
-	$(COPY_FILE) --parents http_request.h httprequest.h httprequest_global.h runnable.h workthread.h palservice.h pvs_hal.h pvsapiif.h pvsapiifcommon.h pvsapiiftypes.h dianutils.h tinyxml2.h commoncontants.h qscriptjson.h AHeaders.h SimpleAmqpClient.h SimpleAmqpClient/AmqpException.h SimpleAmqpClient/AmqpLibraryException.h SimpleAmqpClient/AmqpResponseLibraryException.h SimpleAmqpClient/BadUriException.h SimpleAmqpClient/BasicMessage.h SimpleAmqpClient/Channel.h SimpleAmqpClient/ChannelImpl.h SimpleAmqpClient/ConnectionClosedException.h SimpleAmqpClient/ConsumerCancelledException.h SimpleAmqpClient/ConsumerTagNotFoundException.h SimpleAmqpClient/Envelope.h SimpleAmqpClient/MessageReturnedException.h SimpleAmqpClient/SimpleAmqpClient.h SimpleAmqpClient/Table.h SimpleAmqpClient/TableImpl.h SimpleAmqpClient/Util.h SimpleAmqpClient/Version.h c_udp.h Xml.h inc/formats.h inc/linuxrec.h inc/msp_cmn.h inc/msp_errors.h inc/msp_types.h inc/qise.h inc/qisr.h inc/qivw.h inc/qtts.h inc/speech_recognizer.h inc/tts.h voicethread.h inc/awaken.h $(DISTDIR)/
+	$(COPY_FILE) --parents http_request.h httprequest.h httprequest_global.h runnable.h workthread.h palservice.h pvs_hal.h pvsapiif.h pvsapiifcommon.h pvsapiiftypes.h dianutils.h tinyxml2.h commoncontants.h qscriptjson.h AHeaders.h c_udp.h Xml.h inc/formats.h inc/linuxrec.h inc/msp_cmn.h inc/msp_errors.h inc/msp_types.h inc/qise.h inc/qisr.h inc/qivw.h inc/qtts.h inc/speech_recognizer.h inc/tts.h voicethread.h inc/awaken.h inc/aisound.h $(DISTDIR)/
 	$(COPY_FILE) --parents main.cpp httprequest.cpp runnable.cpp workthread.cpp palservice.cpp dianutils.cpp tinyxml2.cpp qscriptjson.cpp c_udp.cpp Xml.cpp voicethread.cpp $(DISTDIR)/
 
 
@@ -912,7 +898,7 @@ moc_httprequest.cpp: httprequest_global.h \
 		httprequest.h \
 		moc_predefs.h \
 		../Qt5.10.0/5.10.0/gcc_64/bin/moc
-	/home/robot/Qt5.10.0/5.10.0/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/robot/Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++ -I/home/robot/robotblue -I/home/robot/sensord/pvs -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/SimpleAmqpClient/simpleamqpclient-build -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQuick -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtGui -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtNetwork -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtXml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtScript -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include httprequest.h -o moc_httprequest.cpp
+	/home/robot/Qt5.10.0/5.10.0/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/robot/Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++ -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQuick -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtGui -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtNetwork -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtXml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtScript -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include httprequest.h -o moc_httprequest.cpp
 
 moc_workthread.cpp: ../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QTimer \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/qtimer.h \
@@ -985,7 +971,7 @@ moc_workthread.cpp: ../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QTimer \
 		workthread.h \
 		moc_predefs.h \
 		../Qt5.10.0/5.10.0/gcc_64/bin/moc
-	/home/robot/Qt5.10.0/5.10.0/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/robot/Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++ -I/home/robot/robotblue -I/home/robot/sensord/pvs -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/SimpleAmqpClient/simpleamqpclient-build -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQuick -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtGui -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtNetwork -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtXml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtScript -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include workthread.h -o moc_workthread.cpp
+	/home/robot/Qt5.10.0/5.10.0/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/robot/Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++ -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQuick -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtGui -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtNetwork -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtXml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtScript -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include workthread.h -o moc_workthread.cpp
 
 moc_palservice.cpp: ../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QObject \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/qobject.h \
@@ -1054,7 +1040,7 @@ moc_palservice.cpp: ../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QObject \
 		palservice.h \
 		moc_predefs.h \
 		../Qt5.10.0/5.10.0/gcc_64/bin/moc
-	/home/robot/Qt5.10.0/5.10.0/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/robot/Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++ -I/home/robot/robotblue -I/home/robot/sensord/pvs -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/SimpleAmqpClient/simpleamqpclient-build -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQuick -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtGui -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtNetwork -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtXml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtScript -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include palservice.h -o moc_palservice.cpp
+	/home/robot/Qt5.10.0/5.10.0/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/robot/Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++ -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQuick -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtGui -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtNetwork -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtXml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtScript -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include palservice.h -o moc_palservice.cpp
 
 moc_c_udp.cpp: ../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QThread \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/qthread.h \
@@ -1306,7 +1292,7 @@ moc_c_udp.cpp: ../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QThread \
 		c_udp.h \
 		moc_predefs.h \
 		../Qt5.10.0/5.10.0/gcc_64/bin/moc
-	/home/robot/Qt5.10.0/5.10.0/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/robot/Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++ -I/home/robot/robotblue -I/home/robot/sensord/pvs -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/SimpleAmqpClient/simpleamqpclient-build -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQuick -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtGui -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtNetwork -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtXml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtScript -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include c_udp.h -o moc_c_udp.cpp
+	/home/robot/Qt5.10.0/5.10.0/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/robot/Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++ -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQuick -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtGui -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtNetwork -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtXml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtScript -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include c_udp.h -o moc_c_udp.cpp
 
 moc_Xml.cpp: ../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QObject \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/qobject.h \
@@ -1361,7 +1347,7 @@ moc_Xml.cpp: ../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QObject \
 		Xml.h \
 		moc_predefs.h \
 		../Qt5.10.0/5.10.0/gcc_64/bin/moc
-	/home/robot/Qt5.10.0/5.10.0/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/robot/Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++ -I/home/robot/robotblue -I/home/robot/sensord/pvs -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/SimpleAmqpClient/simpleamqpclient-build -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQuick -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtGui -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtNetwork -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtXml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtScript -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include Xml.h -o moc_Xml.cpp
+	/home/robot/Qt5.10.0/5.10.0/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/robot/Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++ -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQuick -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtGui -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtNetwork -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtXml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtScript -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include Xml.h -o moc_Xml.cpp
 
 moc_voicethread.cpp: ../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QTimer \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/qtimer.h \
@@ -1447,7 +1433,7 @@ moc_voicethread.cpp: ../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QTimer \
 		voicethread.h \
 		moc_predefs.h \
 		../Qt5.10.0/5.10.0/gcc_64/bin/moc
-	/home/robot/Qt5.10.0/5.10.0/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/robot/Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++ -I/home/robot/robotblue -I/home/robot/sensord/pvs -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/sensord/pvs/pvslib -I/home/robot/SimpleAmqpClient/simpleamqpclient-build -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQuick -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtGui -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtNetwork -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtXml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtScript -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include voicethread.h -o moc_voicethread.cpp
+	/home/robot/Qt5.10.0/5.10.0/gcc_64/bin/moc $(DEFINES) --include ./moc_predefs.h -I/home/robot/Qt5.10.0/5.10.0/gcc_64/mkspecs/linux-g++ -I/home/robot/robotblue -I/home/robot/robotblue -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/lib/qt-arm-lib -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQuick -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtGui -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtQml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtNetwork -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtXml -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtScript -I/home/robot/Qt5.10.0/5.10.0/gcc_64/include/QtCore -I/usr/include/c++/5 -I/usr/include/x86_64-linux-gnu/c++/5 -I/usr/include/c++/5/backward -I/usr/lib/gcc/x86_64-linux-gnu/5/include -I/usr/local/include -I/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed -I/usr/include/x86_64-linux-gnu -I/usr/include voicethread.h -o moc_voicethread.cpp
 
 compiler_moc_objc_header_make_all:
 compiler_moc_objc_header_clean:
@@ -1779,7 +1765,8 @@ main.o: main.cpp dianutils.h \
 		inc/awaken.h \
 		inc/qisr.h \
 		inc/msp_types.h \
-		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QDateTime
+		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QDateTime \
+		inc/aisound.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o main.o main.cpp
 
 httprequest.o: httprequest.cpp httprequest.h \
@@ -2217,7 +2204,13 @@ palservice.o: palservice.cpp dianutils.h \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/qtimer.h \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/qbasictimer.h \
 		Xml.h \
+		voicethread.h \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QDebug \
+		inc/tts.h \
+		inc/awaken.h \
+		inc/qisr.h \
+		inc/msp_types.h \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QDateTime \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtXml/QDomDocument \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtXml/qdom.h \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtXml/qtxmlglobal.h \
@@ -2245,8 +2238,7 @@ palservice.o: palservice.cpp dianutils.h \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QStringList \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QXmlStreamWriter \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/qxmlstream.h \
-		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QMap \
-		inc/tts.h
+		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QMap
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o palservice.o palservice.cpp
 
 dianutils.o: dianutils.cpp dianutils.h \
@@ -2659,7 +2651,20 @@ c_udp.o: c_udp.cpp c_udp.h \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QHash \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtNetwork/qsslkey.h \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtNetwork/qudpsocket.h \
-		../Qt5.10.0/5.10.0/gcc_64/include/QtNetwork/qtnetworkversion.h
+		../Qt5.10.0/5.10.0/gcc_64/include/QtNetwork/qtnetworkversion.h \
+		voicethread.h \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QTimer \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QDebug \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia/qsoundeffect.h \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia/qtmultimediaglobal.h \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtGui/qtguiglobal.h \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtGui/qtgui-config.h \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia/qtmultimedia-config.h \
+		inc/tts.h \
+		inc/awaken.h \
+		inc/qisr.h \
+		inc/msp_types.h \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QDateTime
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o c_udp.o c_udp.cpp
 
 Xml.o: Xml.cpp Xml.h \
@@ -2826,7 +2831,19 @@ voicethread.o: voicethread.cpp voicethread.h \
 		inc/msp_types.h \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QDateTime \
 		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/qdatetime.h \
-		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QByteArray
+		../Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia/QAudioFormat \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia/qaudioformat.h \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia/qmultimedia.h \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia/QAudioOutput \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia/qaudiooutput.h \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia/qaudio.h \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia/qaudiodeviceinfo.h \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QByteArray \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/QFile \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/qfile.h \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtCore/qfiledevice.h \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia/QSound \
+		../Qt5.10.0/5.10.0/gcc_64/include/QtMultimedia/qsound.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o voicethread.o voicethread.cpp
 
 qrc_qml.o: qrc_qml.cpp 

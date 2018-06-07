@@ -1,7 +1,9 @@
-extern "C"
+﻿extern "C"
 #include "dianutils.h"
 #include "httprequest.h"
 #include "palservice.h"
+#include "voicethread.h"
+#include "voicethread.h"
 #include <QDebug>
 #include <QDomDocument>
 #include <pvs_hal.h>
@@ -10,13 +12,17 @@ extern "C"
 #include <qscriptjson.h>
 #include <inc/tts.h>
 
+
 std::string GLOBAL_USER_ID="0";
 std::int8_t GLOBAL_CURRENT_STATUS;//全局掌脉状态
 std::int8_t GLOBAL_CONTROL_CODE;//全局指令
 std::string GLOBAL_CONTROL_PALM_RESULT;//全局指令
 std::int8_t GLOBAL_CONTROL_PALM_OPTYPE;//全局指令
 std::string GLOBAL_PHONE_FOUR;    //手机后四位
+std::string GLOBAL_PHONE;    //手机后
 std::string GLOBAL_PALM_COUNT="0";   //当前次数
+std::string isInitPalm="0";
+std::int8_t GLOBAL_CURRENT_OLD_STATUS;//全局掌脉状态
 
 const QString AddNewUser="1";
 const QString UpdateUser="2";
@@ -33,7 +39,12 @@ PalService::~PalService()
 }
 
 int PalService::getPalmStatus()
+
 {
+//    if(GLOBAL_CURRENT_STATUS==GLOBAL_CURRENT_OLD_STATUS)
+//        return -1;
+//    else
+//        GLOBAL_CURRENT_OLD_STATUS=GLOBAL_CURRENT_STATUS;
     return GLOBAL_CURRENT_STATUS;
 
 }
@@ -55,6 +66,10 @@ QString PalService::getPhoneFour()
     return QString::fromStdString(GLOBAL_PHONE_FOUR);
 }
 
+QString PalService::getPhone()
+{
+    return QString::fromStdString(GLOBAL_PHONE);
+}
 QString PalService::subPhoneFour()
 {
     QString str;
@@ -77,7 +92,10 @@ void PalService::setPhoneFour(QString s)
 {
    GLOBAL_PHONE_FOUR=s.toStdString();
 }
-
+void PalService::setPhone(QString s)
+{
+   GLOBAL_PHONE=s.toStdString();
+}
 void PalService::setCurrentUserID(QString userID)
 {
     qDebug()<<userID;
@@ -116,15 +134,16 @@ QString PalService::getServelReg()
 
 QString PalService::getPalmData()
 {
-    if(GLOBAL_CONTROL_PALM_RESULT=="0"){
-        return NULL;
-    }
+
     return QString::fromStdString( GLOBAL_CONTROL_PALM_RESULT);
 }
 void PalService::clearPalmData()
 {
     GLOBAL_CONTROL_PALM_RESULT="0";
 }
+
+VoiceThread speaker;
+
 int handleInit(PVS_APIIF_GUI_STATE GuiState,PVS_APIIF_GUI_MESSAGE Message,PVS_APIIF_GUI_BITMAP *pBitmapArea){
         pBitmapArea=pBitmapArea;
 
@@ -135,26 +154,31 @@ int handleInit(PVS_APIIF_GUI_STATE GuiState,PVS_APIIF_GUI_MESSAGE Message,PVS_AP
             case PVS_APIIF_MESSAGE_PLACE_RIGHT:
                 {
                     qDebug()<<("放上手掌\n");
+                    GLOBAL_CURRENT_STATUS=8;
                     break;
                 }
             case PVS_APIIF_MESSAGE_HOLD_UP_HAND:
                 {
                     qDebug()<<("放上手掌\n");
+                    GLOBAL_CURRENT_STATUS=25;
                     break;
                 }
             case PVS_APIIF_MESSAGE_CORRECTLY:
                 {
                     qDebug()<<("请正确放置手\n");
+                    GLOBAL_CURRENT_STATUS=2;
                     break;
                 }
             case PVS_APIIF_MESSAGE_CLOSE:
                 {
                     qDebug()<<("请将手靠近\n");
+                    GLOBAL_CURRENT_STATUS=3;
                     break;
                 }
             case PVS_APIIF_MESSAGE_KEEP_AWAY:
                 {
                     qDebug()<<("请抬高手掌\n");
+                    GLOBAL_CURRENT_STATUS=4;
                     break;
                 }
             case PVS_APIIF_MESSAGE_MOVE_AWAY:
@@ -166,6 +190,7 @@ int handleInit(PVS_APIIF_GUI_STATE GuiState,PVS_APIIF_GUI_MESSAGE Message,PVS_AP
                 }else if(GLOBAL_PALM_COUNT=="2"){
                     GLOBAL_PALM_COUNT="3";
                 }
+                GLOBAL_CURRENT_STATUS=7;
                     qDebug()<<("请移开手,稍后再放回\n");
                     break;
                 }
@@ -174,59 +199,67 @@ int handleInit(PVS_APIIF_GUI_STATE GuiState,PVS_APIIF_GUI_MESSAGE Message,PVS_AP
             case PVS_APIIF_MESSAGE_AUTHENTICATING:
             case PVS_APIIF_MESSAGE_STOP_MOVING:
                 {
-                    qDebug()<<("请保持\n");
-                    GLOBAL_CURRENT_STATUS=PVS_APIIF_MESSAGE_STOP_MOVING;
+                    qDebug()<<("请保持");
+                    GLOBAL_CURRENT_STATUS=1;
                     break;
                 }
             case PVS_APIIF_MESSAGE_EVEN_UP:
             case PVS_APIIF_MESSAGE_SENSOR_ORIENT:
             case PVS_APIIF_MESSAGE_FLATTEN_OUT:
                 {
-                    qDebug()<<("手掌放平\n");
+                        qDebug()<<("手掌放平");
+                        GLOBAL_CURRENT_STATUS=26;
                     break;
                 }
             case PVS_APIIF_MESSAGE_FINGER_OPEN:
                 {
-                    qDebug()<<("请张开手指\n");
+                        qDebug()<<("请张开手指");
+                        GLOBAL_CURRENT_STATUS=22;
                     break;
                 }
             case PVS_APIIF_MESSAGE_MOVE_FORWARD:
                 {
-                    qDebug()<<("向前移动\n");
+                        qDebug()<<("向前移动");
+                        GLOBAL_CURRENT_STATUS=18;
                     break;
                 }
             case PVS_APIIF_MESSAGE_MOVE_BACKWARD:
                 {
-                    qDebug()<<("向后移动\n");
+                        qDebug()<<("向后移动");
+                        GLOBAL_CURRENT_STATUS=19;
                     break;
                 }
             case PVS_APIIF_MESSAGE_MOVE_LEFT:
                 {
-                    qDebug()<<("向左移动\n");
+                        qDebug()<<("向左移动");
+                        GLOBAL_CURRENT_STATUS=13;
                     break;
                 }
             case PVS_APIIF_MESSAGE_MOVE_RIGHT:
                 {
-                    qDebug()<<("向右移动\n");
+                        qDebug()<<("向右移动");
+                        GLOBAL_CURRENT_STATUS=17;
                     break;
                 }
 
             case PVS_APIIF_MESSAGE_RETRY_RIGHT:
                 {
-                    qDebug()<<("重新开始采集\n");
+                        qDebug()<<("重新开始采集");
+                        GLOBAL_CURRENT_STATUS=10;
                     break;
                 }
             case PVS_APIIF_MESSAGE_FAILED_RIGHT:
             case PVS_APIIF_MESSAGE_BRIGHT_MOMENT:
             case PVS_APIIF_MESSAGE_BRIGHT_NG:
                 {
-                    qDebug()<<("重新采集,请不要移动您的手\n");
+                        qDebug()<<("重新采集,请不要移动您的手");
+                        GLOBAL_CURRENT_STATUS=24;
                     break;
                 }
 
             default:
                 {
-                    qDebug()<<("采集中...\n");
+                        qDebug()<<("采集中...");
                     break;
                 }
             }
@@ -243,21 +276,16 @@ void PalService::init()
 {
    qDebug()<<"初始化以及获取状态，时时提醒用户手到操作"<<QString::fromStdString(GLOBAL_USER_ID);
    PVS_BIOAPI_RETURN pbr;
+   GLOBAL_CONTROL_PALM_OPTYPE=1;
+   GLOBAL_CURRENT_STATUS=9;
    hal_pvs_init((CALLBACK_FUNC *)handleInit,&pbr);
    std::string palmData="0";
-
+   GLOBAL_CONTROL_PALM_RESULT="0";
    hal_pvs_enroll(palmData,&pbr);
    //lock done get data finished
    GLOBAL_CONTROL_PALM_RESULT=palmData;
-   GLOBAL_CONTROL_PALM_OPTYPE=1;
-   GLOBAL_USER_ID="1111";
-   GLOBAL_CURRENT_STATUS=9;
-   cancle();
-   terminate();
    qDebug()<<QString::fromStdString(palmData);
 }
-
-
 
 void PalService::ecoll()
 {
@@ -266,15 +294,15 @@ void PalService::ecoll()
 
 void PalService::capture()
 {
-  qDebug()<<"获取数据";
+  qDebug()<<"获取数据--------capture";
+  GLOBAL_CURRENT_STATUS=19;
   PVS_BIOAPI_RETURN pbr;
   hal_pvs_init((CALLBACK_FUNC *)handleInit,&pbr);
   std::string palmData="0";
+  GLOBAL_CONTROL_PALM_RESULT="0";
   hal_pvs_capture(palmData,&pbr);
-
   GLOBAL_CONTROL_PALM_RESULT=palmData;
-  GLOBAL_USER_ID="17317396108";
-  GLOBAL_CURRENT_STATUS=19;
+
   qDebug()<<QString::fromStdString(palmData);
 }
 void PalService::cancle(){
@@ -292,66 +320,50 @@ void PalService::terminate(){
 //控制指令exec
 void PalService::changeValueByCode()
 {
-    while (true) {
-        switch (GLOBAL_CONTROL_CODE) {
-        case 1:
-//            qDebug()<<"开启初始化";
-            if(!isInitPalm)
-               PalService:: init();
-            isInitPalm=true;
-            break;
-        case 2:
-            qDebug()<<"开启注册";
-            break;
-        case 3:
-            PalService::capture();
-            qDebug()<<"开启采集";
-            break;
-        case 4:
-//            qDebug()<<"开始关闭";
-            if(isInitPalm){
-               PalService::terminate();
-               isInitPalm=false;
-            }
-            break;
-        case 5:
-            qDebug()<<"取消采集";
-            PalService::cancle();
-            break;
-        default:
-            break;
-        }
+    qDebug()<<"zhixin______________"+(GLOBAL_CONTROL_CODE);
+    if(isInitPalm=="1"){
+        qDebug()<<"yijingchushihua,using______________";
+        return;
+    }
+    switch ((int)GLOBAL_CONTROL_CODE) {
+    case 1:
+        qDebug()<<"开启初始化";
+        PalService::init();
+        break;
+    case 2:
+        qDebug()<<"开启注册";
+        break;
+    case 3:
+        qDebug()<<"开启采集";
+        PalService::capture();
 
+        break;
+    case 4:
+        PalService::terminate();
+        GLOBAL_CONTROL_CODE=0;
+        break;
+    case 5:
+        PalService::terminate();
+        GLOBAL_CONTROL_CODE=0;
+        break;
+    default:
+        break;
     }
 
 }
 
 void PalService::setChangeValue(QString value)
 {
-    GLOBAL_CONTROL_CODE=value.toInt();
-
-    qDebug()<<"set control value successful";
-}
-
-void PalService::playerTTS(QString value)
-{
-    QString path="text.wav";
-    QByteArray bytestext=value.toUtf8();
-    QByteArray bytespath=path.toUtf8();
-     qDebug()<<"player111";
-
-     qint8 status= start_tts(NULL, bytestext.data(), bytespath.data());
-     qDebug()<<"player";
-
-    if(status==0){
-        qDebug()<<"player";
-    //    effect.setSource(QUrl::fromLocalFile("/home/robot/test.wav"));
-        //循环播放
-        effect.setSource(path);
-//        effect.setLoopCount(QSoundEffect::Infinite);
-            //设置音量，0-1
-        effect.setVolume(0.8f);
-        effect.play();
+    //control palm init
+    if(GLOBAL_CONTROL_CODE==value.toInt()){
+        isInitPalm="1";
+        qDebug()<<GLOBAL_CONTROL_CODE+"-------------------------------------"+value;
+    }else{
+        qDebug()<<GLOBAL_CONTROL_CODE+"-------------------------------------"+value;
+        isInitPalm="0";
+        GLOBAL_CONTROL_CODE=value.toInt();
     }
 
+    qDebug()<<"set control value successful"+value+"----"+GLOBAL_CONTROL_CODE;
 }
+

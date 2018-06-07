@@ -1,6 +1,6 @@
-#include "c_udp.h"
+﻿#include "c_udp.h"
 #include <QByteArray>
-
+#include <voicethread.h>
 std::string GLOBAL_UDP_STR="0";
 C_UDP::C_UDP()
 {
@@ -72,7 +72,8 @@ void C_UDP::run()
                QString HexData = QString::fromStdString( datagram.toStdString());
                //判断数据是否完整
                GLOBAL_UDP_STR=HexData.toStdString();
-
+               VoiceThread speaker;
+               speaker.receiveDataFromUI(talk);
                qDebug() << HexData << currentThreadId()<<QString::fromStdString(GLOBAL_UDP_STR) << endl;
 
             }

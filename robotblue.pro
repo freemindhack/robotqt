@@ -65,24 +65,6 @@ HEADERS += \
     commoncontants.h \
     qscriptjson.h \
     AHeaders.h \
-    SimpleAmqpClient.h \
-    SimpleAmqpClient/AmqpException.h \
-    SimpleAmqpClient/AmqpLibraryException.h \
-    SimpleAmqpClient/AmqpResponseLibraryException.h \
-    SimpleAmqpClient/BadUriException.h \
-    SimpleAmqpClient/BasicMessage.h \
-    SimpleAmqpClient/Channel.h \
-    SimpleAmqpClient/ChannelImpl.h \
-    SimpleAmqpClient/ConnectionClosedException.h \
-    SimpleAmqpClient/ConsumerCancelledException.h \
-    SimpleAmqpClient/ConsumerTagNotFoundException.h \
-    SimpleAmqpClient/Envelope.h \
-    SimpleAmqpClient/MessageReturnedException.h \
-    SimpleAmqpClient/SimpleAmqpClient.h \
-    SimpleAmqpClient/Table.h \
-    SimpleAmqpClient/TableImpl.h \
-    SimpleAmqpClient/Util.h \
-    SimpleAmqpClient/Version.h \
     c_udp.h \
     Xml.h \
     inc/formats.h \
@@ -97,45 +79,12 @@ HEADERS += \
     inc/speech_recognizer.h \
     inc/tts.h \
     voicethread.h \
-    inc/awaken.h
+    inc/awaken.h \
+    inc/aisound.h
 
 
 
 
-unix:!macx: LIBS += -L$$PWD/../sensord/pvs/ -lpvs_hal
-
-INCLUDEPATH += $$PWD/../sensord/pvs
-DEPENDPATH += $$PWD/../sensord/pvs
-
-unix:!macx: LIBS += -L$$PWD/../sensord/pvs/pvslib/ -lf3bc4bio
-
-INCLUDEPATH += $$PWD/../sensord/pvs/pvslib
-DEPENDPATH += $$PWD/../sensord/pvs/pvslib
-
-unix:!macx: LIBS += -L$$PWD/../sensord/pvs/pvslib/ -lf3bc4bsp
-
-INCLUDEPATH += $$PWD/../sensord/pvs/pvslib
-DEPENDPATH += $$PWD/../sensord/pvs/pvslib
-
-unix:!macx: LIBS += -L$$PWD/../sensord/pvs/pvslib/ -lf3bc4cap
-
-INCLUDEPATH += $$PWD/../sensord/pvs/pvslib
-DEPENDPATH += $$PWD/../sensord/pvs/pvslib
-
-unix:!macx: LIBS += -L$$PWD/../sensord/pvs/pvslib/ -lf3bc4com
-
-INCLUDEPATH += $$PWD/../sensord/pvs/pvslib
-DEPENDPATH += $$PWD/../sensord/pvs/pvslib
-
-unix:!macx: LIBS += -L$$PWD/../sensord/pvs/pvslib/ -lf3bc4mat
-
-INCLUDEPATH += $$PWD/../sensord/pvs/pvslib
-DEPENDPATH += $$PWD/../sensord/pvs/pvslib
-
-unix:!macx: LIBS += -L$$PWD/../sensord/pvs/pvslib/ -lpvsapiif
-
-INCLUDEPATH += $$PWD/../sensord/pvs/pvslib
-DEPENDPATH += $$PWD/../sensord/pvs/pvslib
 
 DISTFILES += \
     dataloader.js \
@@ -144,31 +93,66 @@ DISTFILES += \
 
 
 
-unix:!macx: LIBS += -L$$PWD/../SimpleAmqpClient/simpleamqpclient-build/ -lSimpleAmqpClient
-
-INCLUDEPATH += $$PWD/../SimpleAmqpClient/simpleamqpclient-build
-DEPENDPATH += $$PWD/../SimpleAmqpClient/simpleamqpclient-build
-
-
 INCLUDEPATH += $$PWD/.
 DEPENDPATH += $$PWD/.
 
-unix:!macx: LIBS += -L$$PWD/lib/ -ltts
 
-INCLUDEPATH += $$PWD/.
-DEPENDPATH += $$PWD/.
+unix:!macx: LIBS += -L$$PWD/../lib/qt-arm-lib/ -laisound
 
-unix:!macx: LIBS += -L$$PWD/lib/ -lmsc
+INCLUDEPATH += $$PWD/../lib/qt-arm-lib
+DEPENDPATH += $$PWD/../lib/qt-arm-lib
 
-INCLUDEPATH += $$PWD/.
-DEPENDPATH += $$PWD/.
+unix:!macx: LIBS += -L$$PWD/../lib/qt-arm-lib/ -laiui
 
-unix:!macx: LIBS += -L$$PWD/lib/ -laisound
+INCLUDEPATH += $$PWD/../lib/qt-arm-lib
+DEPENDPATH += $$PWD/../lib/qt-arm-lib
 
-INCLUDEPATH += $$PWD/.
-DEPENDPATH += $$PWD/.
+unix:!macx: LIBS += -L$$PWD/../lib/qt-arm-lib/ -lawaken
 
-unix:!macx: LIBS += -L$$PWD/lib/ -lawaken
+INCLUDEPATH += $$PWD/../lib/qt-arm-lib
+DEPENDPATH += $$PWD/../lib/qt-arm-lib
 
-INCLUDEPATH += $$PWD/.
-DEPENDPATH += $$PWD/.
+unix:!macx: LIBS += -L$$PWD/../lib/qt-arm-lib/ -lf3bc4bio
+
+INCLUDEPATH += $$PWD/../lib/qt-arm-lib
+DEPENDPATH += $$PWD/../lib/qt-arm-lib
+
+unix:!macx: LIBS += -L$$PWD/../lib/qt-arm-lib/ -lf3bc4bsp
+
+INCLUDEPATH += $$PWD/../lib/qt-arm-lib
+DEPENDPATH += $$PWD/../lib/qt-arm-lib
+
+unix:!macx: LIBS += -L$$PWD/../lib/qt-arm-lib/ -lf3bc4cap
+
+INCLUDEPATH += $$PWD/../lib/qt-arm-lib
+DEPENDPATH += $$PWD/../lib/qt-arm-lib
+
+unix:!macx: LIBS += -L$$PWD/../lib/qt-arm-lib/ -lf3bc4com
+
+INCLUDEPATH += $$PWD/../lib/qt-arm-lib
+DEPENDPATH += $$PWD/../lib/qt-arm-lib
+
+unix:!macx: LIBS += -L$$PWD/../lib/qt-arm-lib/ -lf3bc4mat
+
+INCLUDEPATH += $$PWD/../lib/qt-arm-lib
+DEPENDPATH += $$PWD/../lib/qt-arm-lib
+
+unix:!macx: LIBS += -L$$PWD/../lib/qt-arm-lib/ -lmsc
+
+INCLUDEPATH += $$PWD/../lib/qt-arm-lib
+DEPENDPATH += $$PWD/../lib/qt-arm-lib
+
+unix:!macx: LIBS += -L$$PWD/../lib/qt-arm-lib/ -lpvsapiif
+
+INCLUDEPATH += $$PWD/../lib/qt-arm-lib
+DEPENDPATH += $$PWD/../lib/qt-arm-lib
+
+unix:!macx: LIBS += -L$$PWD/../lib/qt-arm-lib/ -lpvs_hal
+
+INCLUDEPATH += $$PWD/../lib/qt-arm-lib
+DEPENDPATH += $$PWD/../lib/qt-arm-lib
+
+unix:!macx: LIBS += -L$$PWD/../lib/qt-arm-lib/ -ltts
+
+INCLUDEPATH += $$PWD/../lib/qt-arm-lib
+DEPENDPATH += $$PWD/../lib/qt-arm-lib
