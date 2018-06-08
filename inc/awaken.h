@@ -12,6 +12,7 @@ extern "C" {
 	 */
 int create_wakeup_task(CallBackFunc func);
 
+void destroy_wakeup_task();
 #ifdef __cplusplus
 }
 #endif

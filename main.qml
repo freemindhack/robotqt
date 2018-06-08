@@ -30,13 +30,32 @@ ApplicationWindow {
 //                     swipeView.currentIndex=2;
 //                  console.log("please keep hold")
                   break;
-              case 9:                  
-                  console.log("扫手注册成功"+parameter)                  
-                  doPostPlam("1");//调用
+              case 9:
+                  var phone = palservice.getPhone();
+                  var venn9 = palservice.getPalmData();
+                  var userId =palservice.getCurrentUserID()
+                  console.log(venn9+ "扫手注册成功"+parameter)
+                  if(venn9==="0"){
+                    return;
+                  }
+                  palservice.setChangeValue(4)
+                  palservice.clearPalmData()
+                  timerpalmService.stop()
+                  doPostPlam(venn9,phone,userId,"1");//调用
+
                   break;
               case 19:
-                  console.log("扫手成功并开门"+parameter)
-                  doPostPlamReg();//调用
+                  var venn = palservice.getPalmData();
+                  var phonefour = palservice.getPhoneFour();
+                  console.log(venn+"扫手成功并开门"+parameter)
+                  if(venn==="0"){
+                    return;
+                  }
+                  palservice.setChangeValue(4)
+                  palservice.clearPalmData()
+                  timerpalmService.stop()
+                  doPostPlamReg(venn,phonefour);//调用
+
                   break;
               case 999:
                   break;
@@ -95,12 +114,11 @@ ApplicationWindow {
         //获取开启掌脉
         Timer {
             id: timerpalmService
-            interval: 1000;//如果没有成功就再次开启
+            interval: 100;//如果没有成功就再次开启
             repeat: true
             running: false
             triggeredOnStart: true
             onTriggered: {
-
                  console.log(palservice.getPalmStatus()+"######------")                 
                  palservice.onPalm()
 
@@ -110,7 +128,7 @@ ApplicationWindow {
         //定时操作
         Timer {
             id: timerCommon
-            interval: 2000;//
+            interval: 30000;//
             repeat: true
             running: false
             triggeredOnStart: false
@@ -125,7 +143,7 @@ ApplicationWindow {
         //定时操作
         Timer {
             id: timerTipsCheck
-            interval: 5000;//
+            interval: 3000;//
             repeat: false
             running: false
             triggeredOnStart: false
@@ -144,6 +162,9 @@ ApplicationWindow {
             running: false
             triggeredOnStart: false
             onTriggered: {
+                if(systemerror.visible){
+                   backToIndex()
+                }
                 if(index.visible){
                   startRobotFunc()
                   timerRobot.stop
@@ -1170,7 +1191,7 @@ ApplicationWindow {
                      onClicked: {
                          timerpalmService.stop() //stop palm
                          palservice.setChangeValue(4)//close palm
-                         openDoorFunc()// opendoor
+                         getLoginUserStatus(palservice.getCurrentUserID())// opendoor
                      }
                    }
                 }
@@ -1193,7 +1214,7 @@ ApplicationWindow {
                    MouseArea{
                      anchors.fill: parent
                      onClicked: {
-                         removePalmVienPageShow();
+                         getUserFromPalm()
                      }
                    }
                 }
@@ -1209,8 +1230,7 @@ ApplicationWindow {
               MouseArea{
                   anchors.fill: parent
                   onClicked:{
-                      setUnVisible()
-                      index.visible=true
+                      backToIndex()
                   }
               }
             }
@@ -1302,8 +1322,7 @@ ApplicationWindow {
                   anchors.fill: parent
                   onClicked: {
                       palservice.setChangeValue(4)
-                      setUnVisible()
-                      index.visible=true
+                      backToIndex()
                  }
               }
             }
@@ -1401,8 +1420,7 @@ ApplicationWindow {
               MouseArea{
                   anchors.fill: parent
                   onClicked: {
-                      setUnVisible()
-                      index.visible=true
+                      backToIndex()
                   }
               }
             }
@@ -1476,8 +1494,7 @@ ApplicationWindow {
               MouseArea{
                   anchors.fill: parent
                   onClicked: {
-                      setUnVisible()
-                      index.visible=true
+                      backToIndex()
                   }
               }
             }
@@ -1550,8 +1567,7 @@ ApplicationWindow {
               MouseArea{
                   anchors.fill: parent
                   onClicked: {
-                      setUnVisible()
-                      index.visible=true
+                      backToIndex()
                   }
               }
             }
@@ -1666,8 +1682,7 @@ ApplicationWindow {
      MouseArea{
          anchors.fill: parent
          onClicked:{
-             setUnVisible()
-             index.visible=true
+             backToIndex()
          }
      }
    }
@@ -1730,8 +1745,7 @@ ApplicationWindow {
             MouseArea{
                 anchors.fill: parent
                 onClicked: {
-                    setUnVisible()
-                    index.visible=true
+                    backToIndex()
                 }
             }
           }
@@ -1797,8 +1811,9 @@ ApplicationWindow {
                   workThreadSignal(19) //识别
               if(plamreg.visible)
                   workThreadSignal(9)   //注册
-              palservice.clearPalmData()
+
           }
+          console.log(palservice.getPalmData ()+"----getPalmData---")
           workThreadSignal(palservice.getPalmStatus())
           console.log(palservice.getPalmStatus()+"----palm---")
       }
@@ -1870,67 +1885,18 @@ ApplicationWindow {
 //------------------------------------------------js------------------------------------------------
  //************************************************************///************************************************************//
     //注册掌纹接口
-    function doPostPlamold(userId, vein, opType) {
-        var venn = palservice.getPalmData();
-        if (!venn) {
-            console.log("请先获取掌脉数据")
-            return;
-        }
-        var dataStr = "<?xml version='1.0' encoding='UTF-8' ?>" + "<Application> <PalmReq>  <userId>" + userId + "</userId>  <vein>" + venn + "</vein>  <type>" + opType + "</type> </PalmReq></Application>";
 
-        console.log(dataStr);
-        AjaxScript.ajax({
-            type: "POST",
-            url: palservice.getServelInit(),
-            dataType: "text",
-            contentType: "text/xml",
-            data: dataStr,
-            beforeSend: function() {
-                //some js code
-            },
-            success: function(msg) {
-                //创建文档对象
-                if (msg === "PALMYUN2001") {
-                    console.log(msg + "该会员已经注册")
-                    palservice.setChangeValue(4)
-                    backToIndex()
-                }else if(msg === "PALMGW3002"){
-                    console.log(msg + "系统异常")
-                    regOperation.visible=true;
-                }
-                if (msg.indexOf("transCode") !== -1) {
-                    var transcode = palservice.getXMLByNodeName(msg, "transCode", "PalmRes");
-                    if (transcode === "C1001") {
-                        console.log("扫手注册成功")
-                        palservice.setChangeValue(4)
-                        setUnVisible();
-                        choose.visible=true;
-                    } else {
-                        console.log("扫手注册失败")
-                        palservice.setChangeValue(4)
-                        registerError();
-                    }
-                }
+    function doPostPlam(venn,phone,userId, opType){
 
-                console.log(msg + "111-**********")
-            },
-            error: function() {
-                console.log("error" + "222-**********")
-            }
-        });
-    }
-    function doPostPlam( opType){
-        var venn = palservice.getPalmData();
-        var phone = palservice.getPhone();
         console.log(palservice.getServelReg() + "--------------");
         AjaxScript.ajax({
             type: "POST",
-            url: palservice.getServelReg() + "operation/mobile",
+            url: palservice.getServelReg() + "palm/operation/mobile",
             dataType: "json",
             contentType: "application/json",
             data: JSON.stringify({
-                mobile: palservice.getPhone(),
-                userId: palservice.getCurrentUserID(),
+                mobile: phone,
+                userId: userId,
                 vein:venn,
                 type:opType
             }),
@@ -1940,21 +1906,21 @@ ApplicationWindow {
             success: function(msg) {
                 //创建文档对象
                 if (msg.resultCode === "1") {
-                    timerpalmService.stop()
+                    timerGetRegister.stop()
                     palservice.clearPalmData()
                     console.log("扫手注册成功")
                     palservice.setChangeValue(4)
                     setUnVisible();
                     choose.visible=true;
                 }else if (msg.resultCode === "5002") {
-                    console.log(msg + "该会员已经注册")
-                    timerpalmService.stop()
+                    console.log(JSON.stringify(msg) + "该会员已经注册")
+                    timerGetRegister.stop()
                     palservice.clearPalmData()
                     palservice.setChangeValue(4)
                     speaker.receiveDataFromUI("您已注册,请直接刷手")
                     backToIndex()
                 } else {
-                    timerpalmService.stop()
+                    timerGetRegister.stop()
                     palservice.clearPalmData()
                     console.log("扫手注册失败")
                     palservice.setChangeValue(4)
@@ -2040,59 +2006,12 @@ ApplicationWindow {
         plamBefore.visible=false;
         plamOpen.visible=false;
     }
-    //识别掌纹接口
-    function doPostPlamRegold(userId, palmSet) {
-        var venn = palservice.getPalmData();
-        if (!venn) {
-            console.log("请先获取掌脉数据")
-            return;
-        }
-        var dataStr = "<?xml version='1.0' encoding='UTF-8' ?>" + "<Application> <PalmReq>  <userId>" + userId + "</userId>  <capture>" + venn + "</capture><palmsetName>test</palmsetName></PalmReq></Application>";
 
-        console.log("doPostPlamReg" + dataStr);
-        AjaxScript.ajax({
-            type: "POST",
-            url: palservice.getServelReg(),
-            dataType: "text",
-            contentType: "text/xml",
-            data: dataStr,
-            beforeSend: function() {
-                //some js code
-            },
-            success: function(msg) {
-                palservice.clearPalmData();
-                if(msg==="PALMYUN1006"){
-                    console.log("renzheng failed---211-**********")
-                    timerpalmService.start()
-                    palservice.setChangeValue(4)
-                    speaker.receiveDataFromUI("识别失败,请稍候重试")
-                    authFaile();
-                    return;
-                }
-                console.log(msg + "---211-**********")
-                palservice.setCurrentUserID(palservice.getXMLByNodeName(msg, "userId", "PalmRes"))
-                if (palservice.getCurrentUserID() !== "0") {
-                    openDoorFunc()
-                    console.log("开始-**********")
-                }else{
-                    authFaile();
-                }
-            },
-            error: function() {
-                console.log("error" + "222-**********")
-            }
-        });
-    }
-    function doPostPlamReg(){        
-        var venn = palservice.getPalmData();
-        if(venn.length<10){
-           return;
-        }
-        var phone = palservice.getPhoneFour();
+    function doPostPlamReg(venn,phone){
         console.log(palservice.getServelReg() + "--------------"+venn+"---"+phone);
         AjaxScript.ajax({
             type: "POST",
-            url: palservice.getServelReg() + "identify",
+            url: palservice.getServelReg() + "palm/identify",
             dataType: "json",
             contentType: "application/json",
             data: JSON.stringify({
@@ -2104,7 +2023,7 @@ ApplicationWindow {
             },
             success: function(msg) {
                 palservice.clearPalmData();
-                console.log(JSON.stringify(msg) + "----**********")
+                console.log(JSON.stringify(msg) + "doPostPlamReg----**********")
                 if(msg.resultCode!=="1"){
                     console.log("renzheng failed---211-**********")
                     timerpalmService.stop()
@@ -2116,7 +2035,7 @@ ApplicationWindow {
                 console.log(JSON.stringify(msg) + "----**********")
                 palservice.setCurrentUserID(msg.data.palmRes.userId)
                 if (palservice.getCurrentUserID() !== "0") {
-                    openDoorFunc()
+                    getLoginUserStatus(palservice.getCurrentUserID())
                     console.log("开始-**********")
                 }else{
                     authFaile();
@@ -2127,6 +2046,36 @@ ApplicationWindow {
             }
         });
     }
+
+
+    function getUserFromPalm(){
+        console.log(palservice.getCurrentUserID())
+        AjaxScript.ajax({
+            type: "GET",
+            url: palservice.getServelReg()+ "person/valid?userId="+palservice.getCurrentUserID(),
+            dataType: "json",
+            contentType: "application/json",
+            data:'',
+            beforeSend: function() {
+                //some js code
+            },
+            success: function(msg) {
+                console.log("palm status")
+                if(msg.resultCode==="1"){
+                    speaker.receiveDataFromUI("您已注册,可直接刷手开门")
+                    backToIndex()
+                }else{
+                   removePalmVienPageShow();
+                }
+
+            },
+            error: function() {
+                console.log("palm systemError")
+                systemError()
+            }
+        });
+    }
+
 
     function openDoorFunc() {
         console.log("start" + "OpenDoor-**********")
@@ -2170,6 +2119,7 @@ ApplicationWindow {
     }
     //authFaile
     function authFaile(){
+        timerGetRegister.stop()
         timerpalmService.stop()
         palservice.clearPalmData()
         setUnVisible();
@@ -2178,14 +2128,18 @@ ApplicationWindow {
         errorTips.text="对不起,识别失败 ";
         error_img.source="img/failed.png";
         timerCommon.start()
-        timerpalmService.stop()
     }
     //systemError
     function systemError(){
+        timerRobot.start()
+        timerGetRegister.stop()
+        timerGetUserId.stop()
+        timerpalmService.stop()
+        palservice.clearPalmData()
         setUnVisible();
         systemerror.visible=true;
-        errorTipeEng.text="对不起,系统维护中\n暂停营业";
-        errorTips.text="Sorry, closed for system maintenance";
+        errorTips.text="对不起,系统维护中\n暂停营业";
+        errorTipeEng.text="Sorry, closed for system maintenance";
         error_img.source="img/systemerror.png";
     }
 
@@ -2243,7 +2197,6 @@ ApplicationWindow {
 
     }
     function backToIndex(){
-        closeDoorFunc()
         palservice.clearPalmData()
         timerpalmService.stop()
         timerGetRegister.stop()
@@ -2308,7 +2261,7 @@ ApplicationWindow {
 //        [{"product_barcode": "6926800401516","num": "1"}]
         var codeArr=new Array(1);
 //        for(var i=0;i<productList.list.length;i++){
-            console.log(productList.list[0].name)
+//            console.log(productList.list[0].name)
 //            var ob={product_barcode:msg.list[i].barcode,num:msg.list[i].num};
             var ob={product_barcode:"6926800401516",num:1};
             codeArr[0]=ob;
@@ -2358,7 +2311,45 @@ ApplicationWindow {
         });
 
     }
+    //------
+    function getLoginUserStatus(userId) {
+        AjaxScript.ajax({
+            type: "POST",
+            url: palservice.getComponyUrl() + "memberInfo/loginMemberStatus",
+            dataType: "json",
+            contentType: "application/json",
+            data: JSON.stringify({
+                alipayUserID: userId,
+            }),
+            beforeSend: function() {
+                //some js code
+            },
+            success: function(msg) {
+                console.log(JSON.stringify(msg) + "loginMenberStatus success-**********")
+                if (msg.zMStatus === "0"&&msg.memberResult === "0") {
+                    openDoorFunc()
+                }else if (msg.zMStatus === "1") {
+                    speaker.receiveDataFromUI("您的信用分还需累积,请继续努力")
+                    timerCommon.start()
+                }else if (msg.zMStatus === "2") {
+                    speaker.receiveDataFromUI("对不起,您的帐号异常")
+                    timerCommon.start()
+                }else if (msg.memberResult === "1") {
+                    speaker.receiveDataFromUI("您有未付款订单,请在支付宝生活号里完成支付")
+                    timerCommon.start()
+                }else if (msg.memberResult === "2") {
+                    speaker.receiveDataFromUI("您当前处于解约状态,不能购物")
+                    timerCommon.start()
+                }
+            },
+            error: function() {
+                systemError()
+            }
+        });
 
+    }
+
+    //---------------
     function getShoppingToken(productList) {
         AjaxScript.ajax({
             type: "POST",
@@ -2408,6 +2399,7 @@ ApplicationWindow {
                         palservice.setCurrentUserID(msg.data.alipayUserID);
                         setUnVisible();
                         welcome.visible=true;
+
                     } else {
                         //进入注册页面
                         palservice.setChangeValue(1)
@@ -2417,6 +2409,9 @@ ApplicationWindow {
                         console.log(msg.data.alipayUserID + " success-**********" + status)
                     }
                     console.log(msg.data.alipayUserID + "getCurrentUserFunc success-**********")
+                }else if(msg.message!=="") {
+                    systemError()
+                    speaker.receiveDataFromUI("对不起, 系统维护中,暂停营业")
                 }
                 console.log(JSON.stringify(msg) + "getCurrentUserFunc success-**********")
             },

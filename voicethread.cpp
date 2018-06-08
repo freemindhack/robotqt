@@ -19,7 +19,10 @@ VoiceThread::~VoiceThread()
 
 void VoiceThread::receiveDataFromUI(QString voice)
 {
-   voiceStr=voice.toStdString();
+    if(voice.length()>30){
+        return;
+    }
+   voiceStr=voice.toStdString();   
    qDebug()<<"player_push"+voice;
 }
 
@@ -57,10 +60,10 @@ void VoiceThread::initScan()
         oldVoiceStr=voiceStr;
         voiceStr="0";
         int status= start_tts(NULL, txt2, pathbytes.data());
-        delete txt2;
+
         if(status==0){
-               QSound::play(path);
-       }
+           QSound::play(path);
+        }
     }else{
          oldVoiceStr="0";
     }
@@ -113,7 +116,12 @@ QString VoiceThread::getShopCart()
 
 void VoiceThread::setShopCart(QString msg)
 {
-  resultMsg=msg;
+    resultMsg=msg;
+}
+
+void VoiceThread::destoryVoice()
+{
+//   destroy_wakeup_task();
 }
 
 

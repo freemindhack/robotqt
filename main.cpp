@@ -82,12 +82,12 @@ int main(int argc, char *argv[])
     QObject::connect(palTimer,SIGNAL(timeout()), &palService, SLOT(changeValueByCode()),Qt::QueuedConnection);
     palTimer->start(2000);
 
-    GLOBAL_USER_ID="2088712800736204";
+    GLOBAL_USER_ID="0";
 
 
     QTimer *voiceTimer = new QTimer();
     QObject::connect(voiceTimer,SIGNAL(timeout()), &voice, SLOT(initScan()),Qt::DirectConnection);
-    voiceTimer->start(3000);
+    voiceTimer->start(2000);
 
      QTimer::singleShot(0,&voiceAsr,SLOT(initASR()));
 

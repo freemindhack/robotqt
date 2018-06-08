@@ -140,13 +140,13 @@ QString PalService::getPalmData()
 void PalService::clearPalmData()
 {
     GLOBAL_CONTROL_PALM_RESULT="0";
+    isInitPalm="0";
 }
 
 VoiceThread speaker;
 
 int handleInit(PVS_APIIF_GUI_STATE GuiState,PVS_APIIF_GUI_MESSAGE Message,PVS_APIIF_GUI_BITMAP *pBitmapArea){
-        pBitmapArea=pBitmapArea;
-
+//        pBitmapArea=pBitmapArea;
         if ((GuiState & PVS_APIIF_MESSAGE_PROVIDED) == PVS_APIIF_MESSAGE_PROVIDED)
         {
             switch (Message)
@@ -279,12 +279,17 @@ void PalService::init()
    GLOBAL_CONTROL_PALM_OPTYPE=1;
    GLOBAL_CURRENT_STATUS=9;
    hal_pvs_init((CALLBACK_FUNC *)handleInit,&pbr);
-   std::string palmData="0";
+//   std::string palmData="0";
    GLOBAL_CONTROL_PALM_RESULT="0";
-   hal_pvs_enroll(palmData,&pbr);
+   hal_pvs_enroll(GLOBAL_CONTROL_PALM_RESULT,&pbr);
+   terminate();
    //lock done get data finished
-   GLOBAL_CONTROL_PALM_RESULT=palmData;
-   qDebug()<<QString::fromStdString(palmData);
+//   GLOBAL_CONTROL_PALM_RESULT=palmData;
+//   setChangeValue("4");
+   qDebug()<<QString::fromStdString(GLOBAL_CONTROL_PALM_RESULT)+"----init success";
+   while (GLOBAL_CONTROL_PALM_RESULT!="0") {
+       qDebug()<<"--------init success";
+   }
 }
 
 void PalService::ecoll()
@@ -298,12 +303,17 @@ void PalService::capture()
   GLOBAL_CURRENT_STATUS=19;
   PVS_BIOAPI_RETURN pbr;
   hal_pvs_init((CALLBACK_FUNC *)handleInit,&pbr);
-  std::string palmData="0";
+//  std::string palmData="0";
   GLOBAL_CONTROL_PALM_RESULT="0";
-  hal_pvs_capture(palmData,&pbr);
-  GLOBAL_CONTROL_PALM_RESULT=palmData;
+  hal_pvs_capture(GLOBAL_CONTROL_PALM_RESULT,&pbr);
+//  GLOBAL_CONTROL_PALM_RESULT=palmData;
+  terminate();
 
-  qDebug()<<QString::fromStdString(palmData);
+//  setChangeValue("4");
+  qDebug()<<QString::fromStdString(GLOBAL_CONTROL_PALM_RESULT)+"--------capture success";
+  while (GLOBAL_CONTROL_PALM_RESULT!="0") {
+      qDebug()<<"--------capture success";
+  }
 }
 void PalService::cancle(){
     PVS_BIOAPI_RETURN pbr;
@@ -321,13 +331,15 @@ void PalService::terminate(){
 void PalService::changeValueByCode()
 {
     qDebug()<<"zhixin______________"+(GLOBAL_CONTROL_CODE);
-    if(isInitPalm=="1"){
-        qDebug()<<"yijingchushihua,using______________";
-        return;
-    }
+
     switch ((int)GLOBAL_CONTROL_CODE) {
     case 1:
         qDebug()<<"开启初始化";
+        if(isInitPalm=="1"){
+            qDebug()<<"yijingchushihua,using______________";
+            break;
+        }
+        isInitPalm="0";
         PalService::init();
         break;
     case 2:
@@ -335,6 +347,11 @@ void PalService::changeValueByCode()
         break;
     case 3:
         qDebug()<<"开启采集";
+        if(isInitPalm=="1"){
+            qDebug()<<"yijingchushihua,using______________";
+            break;
+        }
+        isInitPalm="0";
         PalService::capture();
 
         break;
@@ -355,14 +372,7 @@ void PalService::changeValueByCode()
 void PalService::setChangeValue(QString value)
 {
     //control palm init
-    if(GLOBAL_CONTROL_CODE==value.toInt()){
-        isInitPalm="1";
-        qDebug()<<GLOBAL_CONTROL_CODE+"-------------------------------------"+value;
-    }else{
-        qDebug()<<GLOBAL_CONTROL_CODE+"-------------------------------------"+value;
-        isInitPalm="0";
-        GLOBAL_CONTROL_CODE=value.toInt();
-    }
+   GLOBAL_CONTROL_CODE=value.toInt();
 
     qDebug()<<"set control value successful"+value+"----"+GLOBAL_CONTROL_CODE;
 }

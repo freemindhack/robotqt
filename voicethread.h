@@ -40,6 +40,7 @@ public slots:
     QString getCurrentTime();
     QString getShopCart( );
     void setShopCart(QString msg);
+    void destoryVoice();
 private:
      QSoundEffect effect;
      Func fback;

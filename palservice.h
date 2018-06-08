@@ -63,8 +63,9 @@ private:
   QString releaseUrl="https://api.quixmart.com/quixmart-api/";
 
   QSoundEffect effect;
-  QString palmServelInit="https://palm-test.quixmart.com/v1/mobile/api/grampus/palm/";
-  QString palmServelReg="https://palm-test.quixmart.com/v1/mobile/api/grampus/palm/";
+  QString palmServelInit="https://palm-test.quixmart.com/v1/mobile/api/grampus/";
+  QString palmServelReg="https://palm-test.quixmart.com/v1/mobile/api/grampus/";
+
 };
 
 #endif // PALSERVICE_H
